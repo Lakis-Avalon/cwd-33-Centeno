@@ -1,0 +1,629 @@
+@import url('Fonts.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background:        
+    linear-gradient(to bottom, 
+        rgb(139, 0, 0), /* Blood red */
+        rgb(0, 0, 0) 60%, /* Black */
+        rgb(40, 48, 69) 90%, /* Night dark blue */
+        rgb(119, 158, 255) 100% /* Night light blue */),
+    linear-gradient(to right, 
+        rgb(191, 12, 12), /* Blood red */
+        rgba(0, 0, 0, 0.5) 25% /* Black with opacity */),
+    linear-gradient(to left, 
+        rgb(12, 78, 191) 15%, /* Blue */
+        rgba(17, 25, 90, 0.5) /* Black with opacity */);
+    background-blend-mode: overlay; /* Optional: Adjust how the gradients blend */
+    z-index:0;
+}
+
+nav {
+    box-shadow: none;
+    z-index: 5; /*makes navbar above the carousel, same hierarchy as sidenav*/
+    background: linear-gradient(
+                to bottom, 
+                rgb(139, 0, 0), /* Blood red */
+                rgb(0, 0, 0), /* Black */
+                rgb(40, 48, 69) 80%, /* Night dark blue */
+                rgb(40, 48, 69, .9) 100% /* Night dark blue */);
+    top:30;
+
+}
+
+
+.nb-logo {
+    width:25vw;
+    height:auto;
+    margin-top:-3vh;
+    margin-left: 5%;
+    z-index:15;
+}
+
+.nb-logo:hover{
+    transform: scale(1.2);
+}
+
+.tabs-wrapper {
+    width:100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.clan-tab {
+    display: inline-flex;
+    margin: 0;
+}
+
+/* Custom scrollbar styles */
+.tabs-wrapper::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar (for horizontal scrolling) */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb {
+    background: #a12727; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering */
+}
+
+.tabs-wrapper::-webkit-scrollbar-track {
+    background: #ada5a5; /* Light gray track background */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+    
+
+.clan-tab li {
+    font-family: 'Heading', sans-serif;
+    text-align: center;
+    width:150px;
+}
+
+.clan-tab li a{
+    color:white;
+    font-size: 40px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.clan-tab li a.lan:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px rgba(0, 119, 255, 0.863);
+}
+
+.clan-tab li a.wen:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px crimson;
+}
+
+.clan-tab li a.minor:hover{
+    color: rgb(255, 255, 255); 
+    font-size: 300%;
+    text-shadow: 0 0 10px black;
+}
+
+.clan-tab li a.nie:hover{
+    color:rgba(0, 0, 0, 0.74); 
+    font-size: 300%;
+    text-shadow: 0 0 10px goldenrod;
+}
+
+.clan-tab li a.jiang:hover{
+    color:silver; 
+    font-size: 300%;
+    text-shadow: 0 0 10px purple;
+}
+
+.clan-tab li a.jin:hover{
+    color:rgb(160, 159, 96); 
+    font-size: 300%;
+    text-shadow: 0 0 10px yellow;
+}
+
+/*SideNav Part*/
+
+.custom-sidenav {
+    background-color: #2b2b2b;
+    border-right: 2px groove rgb(0, 0, 0); 
+    width: 300px; 
+    color:white;
+    z-index: 1100;
+}
+
+.sidenav-header {
+    background-color:#1f1f1f;
+    text-align:center;
+    height:auto;
+    padding:15px 0px 35px 0px;
+}
+
+.sidenav-header .sidenav-title {
+    font-family: 'Title', sans-serif;
+    transition: color 0.3s ease font-size 0.5s ease;
+    font-size:3em;
+    line-height:.8;
+    margin:0;
+    color:white;
+    word-wrap:break-word;
+    width:100%;
+}
+
+.sidenav .sidenav-title:hover {
+    color:#a80a0a; 
+}
+
+.sidenav .clan-link{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.sidenav .clan-link:hover{
+    background-color: rgb(36, 31, 32);
+}
+
+.clan-symbol {
+    height: auto;
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left:-10px;
+}
+
+.clan-name {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    align-self: center;
+    font-family: 'Heading', sans-serif;
+}
+
+.sidenav .clan-name:hover  {
+    color:#c70202; 
+    font-size:35px;
+}
+
+
+.sidenav-trigger {
+    position: fixed; 
+    top: 15px;       
+    left: 20px;      
+    z-index: 1200;   
+    color: white;    
+    padding: 10px;   
+    border-radius: 50%; 
+    display: flex;   /* center icon inside */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/* Full-width banner section */
+.page-header {
+    text-align: center;
+    height: 85vh; /* Full viewport height */
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../Assets/BG/wangxian-banner.webp);
+    background-size: cover; /* Makes the GIF cover the entire container */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    margin-top: 0;
+}
+
+
+.page-header .banner-title {
+    font-size: 10rem; /* Adjust the font size as needed */
+    color: white; /* Contrast text color */
+    /*text-shadow: 15px -5px 15px rgba(45, 132, 255); /* Add a subtle shadow for readability */
+    text-shadow: -15px 5px 15px rgba(45, 132, 255);
+    font-family: 'Wangxian', serif; /* Choose a font style */
+    z-index: 2; /* Ensure the text stays above the image */
+    margin-top: 15%;
+}
+
+.page-header .banner-title:hover {
+    font-size:11rem;
+    color:#000000;
+    text-shadow: 15px -10px 15px rgb(18, 176, 0); 
+
+}
+/*
+.card-panel .blockquote {
+    font-family:'WX-Quote', sans-serif;
+    border-left:3px solid linear-gradient(to bottom, rgb(9, 52, 170), rgb(220, 20, 20));
+}
+*/
+.card-panel .blockquote{
+    font-family: 'Body', sans-serif;
+    color:white;
+    background-color:#1f1f1f22;
+    border-radius:5px;
+    border-left:5px solid rgb(255, 0, 0);
+    padding:5px 3px 5px 3%;
+    width:50%;
+    left:0;
+    margin-top: 0vh;
+}
+
+/* Content Section */
+
+.scrollspy-menu {
+    position: sticky;
+    left:0;
+    top:15%; /* Adjust this value to set the distance from the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 10px; /* Optional: adjust padding for better visuals */
+    padding-left:2%;
+    margin-top: 1%;
+    width:20%;
+    text-align:left;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.scrollspy-item{
+    font-family: 'Body', sans-serif;
+    font-size:1.3em;
+    color:#e40404;
+    transition: all 0.3s ease;
+    font-weight:bold;
+    padding-right:5px;
+    display: block;
+}
+
+.scrollspy-item:hover {
+    text-shadow: 0 0 8px #019901, 0 0 16px #00ff00; /* Green glow */
+    transition: text-shadow 0.2s ease;
+}
+
+.scrollspy-item.active {
+    color: white;
+    font-size: 1.5em; /* Slightly bigger font */
+    text-shadow: 0 0 10px #007bff, 0 0 20px #007bff; /* Blue glow */
+    border-right: 3px solid #007bff; /* Thin blue border */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for active item */
+.scrollspy-item.active:hover {
+    text-shadow: 0 0 15px #007bff, 0 0 30px #007bff; /* Amplified blue glow */
+    transition: text-shadow 0.2s ease;
+}
+
+.scrollspy-menu::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+}
+
+.scrollspy-menu::-webkit-scrollbar-track {
+    background-color: transparent; /* Background of the track */
+
+}
+
+.scrollspy-menu::-webkit-scrollbar-thumb {
+    background-color: silver; /* Blood red thumb */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Adds a smooth transition to the background-color and box-shadow */
+    border-radius: 10px;
+}
+
+.scrollspy-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #2dd92d; /* Bright ghostly green */
+}
+
+.scrollspy-menu::-webkit-scrollbar-thumb:active {
+    background-color: #42ff42; /* Darker ghostly green */
+    box-shadow: 
+    0 0 10px #1ec51e, 
+    0 0 20px #179e17, 
+    0 0 30px #2bb32b, 
+    0 0 50px #127a12;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+
+
+
+.dropdown-trigger {
+    position: sticky;
+    top: 0; /* Same value as above */
+    z-index: 1000;
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none; /* Removes Materialize shadow */
+    display: inline-block; /* Makes the image-only layout cleaner */
+    width: 100%;
+    background:linear-gradient(to bottom, black, #c70202);
+}
+
+.dropdown-trigger:hover {
+    background:linear-gradient(to bottom, black ,#8a1818, #c70202 60%, rgb(24, 222, 67));
+}
+
+#dropdown-menu {
+    background: linear-gradient(to right, #620101 10%, rgb(0, 0, 0) 30%, rgb(0, 0, 0) 70%,#620101 90%);
+    border-radius: 8px;
+    padding: 10px 0;
+    left: 50% !important; /* Override default Materialize alignment */
+    transform: translateX(-50%) !important; /* Center horizontally */
+    width: 400px; /* Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    animation: dropdownFadeIn 0.3s ease forwards;
+    max-height: 500px;
+    z-index:900;
+    padding-top:30px;
+}
+
+#dropdown-menu li a {
+    font-family: 'Body', serif; /* Use a thematic font */
+    color: #FF4D4D; /* Theme-inspired blue color */
+    font-size: 1.1rem;
+    text-align:center !important;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+#dropdown-menu li a:hover {
+    background:linear-gradient(to right, rgb(0, 92, 191),white,rgb(0, 92, 191));
+    color: #001b6c;
+    font-weight: bold;
+    font-size:1.3rem;
+    transition: all 0.3s ease; 
+}
+
+
+#dropdown-menu::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+}
+
+#dropdown-menu::-webkit-scrollbar-track {
+    background-color: transparent; /* Background of the track */
+
+}
+
+#dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: silver; /* Blood red thumb */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Adds a smooth transition to the background-color and box-shadow */
+    border-radius: 10px;
+}
+
+#dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #2dd92d; /* Bright ghostly green */
+}
+
+#dropdown-menu::-webkit-scrollbar-thumb:active {
+    background-color: #42ff42; /* Darker ghostly green */
+    box-shadow: 
+    0 0 10px #1ec51e, 
+    0 0 20px #179e17, 
+    0 0 30px #2bb32b, 
+    0 0 50px #127a12;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+
+
+@keyframes dropdownFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cp-container {
+    width:80%;
+    margin-left:15%;
+    padding: 0% 0% 0% 10%;
+    margin-top:-35%;
+    color:white;
+}
+
+.cp-container h2{
+    font-family:'Wangxian', sans-serif;
+}
+
+.cp-container p{
+    font-family:'WX-Body', sans-serif;
+}
+
+.card-panel:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.02);
+  }
+
+
+.cp-container .card-panel.neutral{
+    background: linear-gradient(to bottom, rgba(204, 217, 233, 0.3), rgba(230, 237, 247, 0.3));
+    color: white;
+}
+
+.cp-container .card-panel.joy{
+    background: linear-gradient(to bottom, rgba(255, 189, 189, 0.3), rgba(255, 140, 140, 0.3));
+    color: white; 
+}
+
+.cp-container .card-panel.angst{
+    background: linear-gradient(to bottom, rgba(17, 44, 78, 0.5), rgba(11, 26, 48, 0.5));
+    color: white;
+}
+
+.cp-container .card-panel.hope{
+    background: linear-gradient(to bottom, rgba(255, 215, 134, 0.3), rgba(255, 175, 204, 0.3));
+    color: white;
+}
+.cp-container .card-panel.love{
+    background: linear-gradient(to bottom, rgba(211, 47, 47, 0.9), rgba(255, 112, 112, 0.9), rgba(253, 200, 217, 0.8));
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+audio {
+    display: none;
+}
+
+ /* Style for the floating action button (FAB) */
+ #playMusicBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1100;
+    background-color: #0A2472; /* Default background (gray) */
+}
+
+/* Active state for the FAB when music is playing */
+#playMusicBtn.active {
+    background-color: #000000; /* Red when active */
+}
+
+#playMusicBtn.active .material-icons {
+    color:#c70202;
+}
+
+/* Hover effect to lighten the FAB when hovering */
+#playMusicBtn:hover {
+    background-color: #04d500; /* Lighten on hover */
+}
+
+#playMusicBtn:hover .material-icons {
+    color:black;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+
+
+.page-footer {
+    background-color:black;
+    margin-top: 2vh;
+}
+
+.page-footer ul a {
+    font-family: 'Body';
+    font-size: larger;
+}
+
+.page-footer h1 {
+    font-family: 'Wangxian', sans-serif;
+}
+
+.foot-columns {
+    margin-top:-5vh;
+    margin-left: 2vw;
+}
+
+.footer-title {
+    line-height:.7;
+    margin:2vh 0 0 -3vw;
+}
+
+.footer-heading {
+    font-family: 'Heading';
+    margin-bottom: -1vh;
+    margin-left: -1vw;
+}
+
+.page-footer .footer-copyright {
+    background-color:rgb(140, 12, 38);
+    text-align:center;
+    justify-items: center;
+    padding:0;
+}
+@media (max-width: 600px) {
+    .nb-logo{
+        margin-top: 0;
+    }
+
+    .page-header h1 {
+        font-size: 75px;
+        margin-top: 25%;
+        line-height: .8;
+    }
+
+    
+    .page-footer {
+        text-align: center;
+
+    }
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin-top:25%;
+        padding-bottom: -20%;
+        font-size: xx-large;
+    }
+
+    .foot-columns .grey-text{
+        font-size: small;
+    }
+
+    .row .content-img {
+        margin-top:0 !important;
+    }
+
+    .page-header {
+        height:40vh;
+    }
+    
+    .page-header .banner-title {
+        font-size:4rem;
+        z-index: 4;
+        margin-top: 33%;
+    }
+
+    .page-header .banner-title:hover {
+        font-size:6rem;
+    }
+
+
+
+    .cp-container {
+        width:100%;
+        padding:5%;
+        margin-left:0;
+        margin-top:-3%;
+    }
+
+
+
+}

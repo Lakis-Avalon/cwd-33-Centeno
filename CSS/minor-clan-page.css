@@ -1,0 +1,444 @@
+@import url('Fonts.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+nav {
+    position:fixed;
+    background:transparent;
+    box-shadow: none;
+    z-index: 5; /*makes navbar above the carousel, same hierarchy as sidenav*/
+}
+
+
+.nav-wrapper {
+    background: linear-gradient(to bottom, rgba(105, 7, 7, 0.616), rgba(0, 0, 0, 0));
+    position:relative;
+}
+
+.nb-logo {
+    width:25vw;
+    height:auto;
+    margin-top:-3vh;
+    margin-left: 5%;
+    z-index:15;
+}
+
+.nb-logo:hover{
+    transform: scale(1.2);
+}
+
+.tabs-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.clan-tab {
+    display: inline-flex;
+    margin: 0;
+}
+
+/* Custom scrollbar styles */
+.tabs-wrapper::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar (for horizontal scrolling) */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb {
+    background: #a12727; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering */
+}
+
+.tabs-wrapper::-webkit-scrollbar-track {
+    background: #ada5a5; /* Light gray track background */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+    
+
+.clan-tab li {
+    font-family: 'Heading', sans-serif;
+    text-align: center;
+    width:175px;
+}
+
+.clan-tab li a{
+    color:white;
+    font-size: 40px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.clan-tab li a.lan:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px rgba(0, 119, 255, 0.863);
+}
+
+.clan-tab li a.wen:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px crimson;
+}
+
+.clan-tab li a.minor:hover{
+    color: rgb(255, 255, 255); 
+    font-size: 300%;
+    text-shadow: 0 0 10px black;
+}
+
+.clan-tab li a.nie:hover{
+    color:rgba(0, 0, 0, 0.74); 
+    font-size: 300%;
+    text-shadow: 0 0 10px goldenrod;
+}
+
+.clan-tab li a.jiang:hover{
+    color:silver; 
+    font-size: 300%;
+    text-shadow: 0 0 10px purple;
+}
+
+.clan-tab li a.jin:hover{
+    color:rgb(160, 159, 96); 
+    font-size: 300%;
+    text-shadow: 0 0 10px yellow;
+}
+
+/*SideNav Part*/
+
+.custom-sidenav {
+    background-color: #2b2b2b;
+    border-right: 2px groove rgb(0, 0, 0); 
+    width: 300px; 
+    color:white;
+}
+
+.sidenav-header {
+    background-color:#1f1f1f;
+    text-align:center;
+    height:auto;
+    padding:15px 0px 35px 0px;
+}
+
+.sidenav-header .sidenav-title {
+    font-family: 'Title', sans-serif;
+    transition: color 0.3s ease font-size 0.5s ease;
+    font-size:3em;
+    line-height:.8;
+    margin:0;
+    color:white;
+    word-wrap:break-word;
+    width:100%;
+}
+
+.sidenav .sidenav-title:hover {
+    color:#a80a0a; 
+}
+
+.sidenav .clan-link{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.sidenav .clan-link:hover{
+    background-color: rgb(36, 31, 32);
+}
+
+.clan-symbol {
+    height: auto;
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left:-10px;
+}
+
+.clan-name {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    align-self: center;
+    font-family: 'Heading', sans-serif;
+}
+
+.sidenav .clan-name:hover  {
+    color:#c70202; 
+    font-size:35px;
+}
+
+
+.sidenav-trigger {
+    position: fixed; 
+    top: 15px;       
+    left: 20px;      
+    z-index: 10;   
+    color: white;    
+    padding: 10px;   
+    border-radius: 50%; 
+    display: flex;   /* center icon inside */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+h1 {
+    font-family:'Minor', sans-serif;
+}
+
+h2 {
+    font-family: 'Heading', sans-serif;
+    padding-top:2vh;
+    font-size: 6em;
+}
+
+p {
+    font-family: 'Body', sans-serif;  
+}
+
+.page-content {
+    position: relative; /* Needed to position overlay and content within */
+    background-image: url(../Assets/BG/indiv-misc.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding-top: 15vh;
+    height: 100%;
+    z-index:0;
+}
+
+.overlay {
+    position: absolute; /* Position it absolutely within .page-content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    z-index: 1; /* Sits above the background image, below other content */
+}
+
+
+.sect-symbol img {
+    display: block; /* Centers the image properly */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 250px; /* Constrain the width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure proper resizing without distortion */
+    z-index:5;
+    position:relative;
+}
+
+.clan-info {
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #D9D9D1, #D1C8B7); /* Aged paper with gradient */
+    margin: -5vh 10vw 0 10vw;
+    padding: 2vh 2vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    z-index: 4;
+    position:relative;
+
+}
+
+.mem-list {
+    background-color: #494848;
+    z-index:4;
+    position:relative;
+}
+
+.mem-list .row {
+    margin:1vh 4vw 1vh 4vw;
+}
+
+/* Parent Column */
+.mem-list .col {
+    position: relative;
+    height: 75vh;
+    overflow: hidden; /* Ensures children stay within bounds */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+
+/* Card Panel */
+.card-panel {
+    position: relative;
+    height: 100%;
+    overflow: hidden; /* Keeps content within bounds */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #D4D4D4;
+    border-radius: 5px;
+
+}
+
+.page-content h3 {
+    font-family: 'Minor', sans-serif;
+}
+
+.page-content p {
+    font-size: 1.4em;
+}
+
+.image-container, .name-banner {
+    transition: transform .1s ease-out, filter .5s ease;
+}
+
+.card-panel:hover .char-pic {
+    transform: scale(1.2);  /* Zoom in by 10% */
+    margin-top: 6vh;
+}
+
+/* Zoom and darken effect for the name banner */
+.card-panel:hover .name-banner {
+    transform: scale(1.05);  /* Zoom in by 5% */
+    filter: brightness(.7);  /* Darken the name banner */
+    margin-right:5vw;
+}
+
+.card-link {
+    display: block;           /* Makes the <a> tag cover the entire card */
+    width: 100%;              /* Ensures it takes the full width of its parent */
+    height: 100%;             /* Ensures it takes the full height of its parent */
+    text-decoration: none;    /* Removes default underline */
+    box-sizing: border-box;   /* Ensures padding and border do not affect total width/height */
+}
+
+/* Character Image */
+.char-pic {
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures it fills the column */
+    object-fit: contain; /* Crops excess */
+    z-index: 0;
+}
+
+/* Name Banner */
+.name-banner {
+    position: absolute;
+    margin-bottom: -8vh;
+    left: 0;
+    width: 120%; /* Allows tilt but hidden by overflow */
+    height: 25%;
+    background-color: #909090;
+    transform: rotate(-5deg);
+    transform-origin: left bottom;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-banner p {
+    color: black;
+    font-family: 'Heading', sans-serif;
+    font-size: 3em;
+    z-index: 2;
+    margin: 0 5vw 3vh 3vw;
+    line-height:.7;
+}
+
+.page-footer {
+    background-color:black;
+    margin-top: -2vh;
+}
+
+.page-footer ul a {
+    font-family: 'Body';
+    font-size: larger;
+}
+
+.foot-columns {
+    margin-top:-5vh;
+}
+
+.footer-title {
+    line-height:.7;
+    margin:2vh 0 0 -3vw;
+}
+
+.footer-heading {
+    font-family: 'Heading';
+    margin-bottom: -1vh;
+    margin-left: -1vw;
+}
+
+.page-footer .footer-copyright {
+    background-color:rgb(140, 12, 38);
+    text-align:center;
+    justify-items: center;
+    padding:0;
+}
+@media (max-width: 600px) {
+    .nb-logo{
+        margin-top: 0;
+    }
+
+    
+    .page-footer {
+        text-align: center;
+
+    }
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin-top:25%;
+        padding-bottom: -20%;
+        font-size: xx-large;
+    }
+
+    .foot-columns .grey-text{
+        font-size: small;
+    }
+
+    .row .content-img {
+        margin-top:0 !important;
+    }
+
+    .page-content p {
+        font-size: 1em;
+    }
+    
+    .page-content .mem-list p {
+        font-size: 250%;
+        margin-right:20%;
+
+    }
+
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    width:100%;
+}
+
+.row .content-img {
+    margin-top:17vh;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #757575; /* Adjust to your theme */
+    margin-top: 5px;
+}

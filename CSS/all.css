@@ -1,0 +1,603 @@
+@import url('Fonts.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+nav {
+    position:fixed;
+    background:transparent;
+    box-shadow: none;
+    z-index: 5; /*makes navbar above the carousel, same hierarchy as sidenav*/
+}
+
+
+.nav-wrapper {
+    background: linear-gradient(to bottom, rgba(105, 7, 7, 0.616), rgba(0, 0, 0, 0));
+    position:relative;
+}
+
+.nb-logo {
+    width:25vw;
+    height:auto;
+    margin-top:-3vh;
+    margin-left: 5%;
+    z-index:15;
+}
+
+.nb-logo:hover{
+    transform: scale(1.2);
+}
+
+.tabs-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.clan-tab {
+    display: inline-flex;
+    margin: 0;
+}
+
+/* Custom scrollbar styles */
+.tabs-wrapper::-webkit-scrollbar {
+    height: 5px; /* Height of the scrollbar (for horizontal scrolling) */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb {
+    background: #a12727; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering */
+}
+
+.tabs-wrapper::-webkit-scrollbar-track {
+    background: #ada5a5; /* Light gray track background */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+    
+
+.clan-tab li {
+    font-family: 'Heading', sans-serif;
+    text-align: center;
+    width:175px;
+}
+
+.clan-tab li a{
+    color:white;
+    font-size: 40px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.clan-tab li a.lan:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px rgba(0, 119, 255, 0.863);
+}
+
+.clan-tab li a.wen:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px crimson;
+}
+
+.clan-tab li a.minor:hover{
+    color: rgb(255, 255, 255); 
+    font-size: 300%;
+    text-shadow: 0 0 10px black;
+}
+
+.clan-tab li a.nie:hover{
+    color:rgba(0, 0, 0, 0.74); 
+    font-size: 300%;
+    text-shadow: 0 0 10px goldenrod;
+}
+
+.clan-tab li a.jiang:hover{
+    color:silver; 
+    font-size: 300%;
+    text-shadow: 0 0 10px purple;
+}
+
+.clan-tab li a.jin:hover{
+    color:rgb(160, 159, 96); 
+    font-size: 300%;
+    text-shadow: 0 0 10px yellow;
+}
+
+/*SideNav Part*/
+
+.custom-sidenav {
+    background-color: #2b2b2b;
+    border-right: 2px groove rgb(0, 0, 0); 
+    width: 300px; 
+    color:white;
+}
+
+.sidenav-header {
+    background-color:#1f1f1f;
+    text-align:center;
+    height:auto;
+    padding:15px 0px 35px 0px;
+}
+
+.sidenav-header .sidenav-title {
+    font-family: 'Title', sans-serif;
+    transition: color 0.3s ease font-size 0.5s ease;
+    font-size:3em;
+    line-height:.8;
+    margin:0;
+    color:white;
+    word-wrap:break-word;
+    width:100%;
+}
+
+.sidenav .sidenav-title:hover {
+    color:#a80a0a; 
+}
+
+.sidenav .clan-link{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.sidenav .clan-link:hover{
+    background-color: rgb(36, 31, 32);
+}
+
+.clan-symbol {
+    height: auto;
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left:-10px;
+}
+
+.clan-name {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    align-self: center;
+    font-family: 'Heading', sans-serif;
+}
+
+.sidenav .clan-name:hover  {
+    color:#c70202; 
+    font-size:35px;
+}
+
+
+.sidenav-trigger {
+    position: fixed; 
+    top: 15px;       
+    left: 20px;      
+    z-index: 10;   
+    color: white;    
+    padding: 10px;   
+    border-radius: 50%; 
+    display: flex;   /* center icon inside */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+h1 {
+    font-family:'Title', sans-serif;
+}
+
+h2 {
+    font-family: 'Heading', sans-serif;
+    padding-top:2vh;
+    font-size: 6em;
+}
+
+p {
+    font-family: 'Body', sans-serif;  
+}
+
+.page-header {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(18, 16, 134) 50%, rgb(0, 0, 0));
+    min-height: 100vh; 
+    overflow: hidden;
+    z-index:3;
+}
+
+
+.page-header h1 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100px;
+    margin-top: 10%;
+}
+
+.cultivator-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Or whatever height you want for the container */
+    overflow: hidden; /* Prevents video overflow */
+    margin-bottom: 20%;
+    padding-bottom:5%;
+    overflow-y: auto;
+    z-index:4;
+    background-image: url(../Assets/BG/all--bg.gif);
+    background-size: cover; /* Makes the GIF cover the entire container */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+}
+
+audio {
+    display: none;
+}
+
+
+
+/* Filter Bar Styling */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.624);
+    border: 2px outset black;
+    gap: 3%; /* Space between elements */
+    width: 90%;
+    margin:3% 5%;
+}
+
+/* Slanted Button Styling */
+.slanted-button {
+    width: 50px; /* Button size */
+    height: 50px;
+    background: #161b33;
+    border: 2.5px inset rgb(209, 209, 209);
+    transform: skew(-10deg); /* Slant the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Image inside the button */
+.button-icon {
+    max-width: 75%; /* Keep the image responsive */
+    max-height: 75%;
+    transform: skew(10deg); /* Reverse skew to keep image straight */
+}
+
+
+.vertical-divider {
+    padding: 0% 15% 0% 5%; /* Space inside the divider for text */
+    background:transparent;/* Semi-transparent background */
+    color: white;
+    font-size: 400%;
+    line-height: .05;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vertical-divider p {
+    font-family: 'LBody', sans-serif ;
+    padding-top:-15%;
+    padding-bottom:-25%;
+}
+
+
+.filter-section {
+    display: flex;
+    gap: 10px;
+    width:80%;
+    padding:2% 3%;
+}
+
+/* Hover Effect */
+.slanted-button:hover {
+    background: #000036;
+    border:3px outset rgb(255, 255, 255) ;
+    transform: skew(-10deg) scale(1.1); /* Enlarge on hover */
+}
+
+.slanted-button.active {
+    background: #4d1414;
+    border:3.5px outset rgb(125, 0, 0) ;
+    transform: skew(-10deg) scale(1.1); /* Enlarge on hover */
+}
+
+.slanted-button:hover .button-icon {
+    transform: skew(10deg) scale(1.15); /* Enlarge the icon */
+}
+
+
+@media (max-width: 768px) {
+    .filter-bar {
+        gap: 10px;
+    }
+
+    .slanted-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .vertical-divider {
+        display:none;
+    }
+
+    .cultivator-container {
+        background-position:-400px top ;
+        padding: 3% 0;
+    }
+
+}
+
+
+
+/* Cultivator Grid */
+.cultivator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 3%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .cultivator-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding-left:3%;
+        padding-right: 3%;
+        gap:15px;
+    }
+
+    .cultivator-card {
+        height:10px;
+        width:100%;
+    }
+
+}
+
+.cultivator-card {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Tilted Banner */
+.cultivator-card::after {
+    content: "";
+    position: absolute;
+    bottom: -25%; /* Anchored to the bottom */
+    left: -10%; /* Starts slightly outside the card */
+    background: rgba(0, 0, 0, 0.6);
+    height: 55%; /* Height of the banner */
+    width: 120%; /* Width exceeds the card to allow the tilt */
+    transform: rotate(10deg); /* Tilt the entire banner */
+    z-index: 1; /* Ensures it sits behind the text */
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+/* Text on Banner */
+.cultivator-card span {
+    position: absolute;
+    bottom: 3%; /* Ensures it overlaps the banner */
+    left: 5%; /* Aligns text slightly away from the card's edge */
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 2; /* Keeps the text on top of the banner */
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'Heading', sans-serif;
+}
+
+.cultivator-card:hover::after {
+    background: rgba(0, 0, 0, 1); /* Solid background on hover */
+}
+.cultivator-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7); /* Red glow effect */
+    z-index: 10; /* Bring the hovered card to the front */
+}
+
+
+.cultivator-card:hover span {
+    color: crimson; /* Changes the text color on hover */
+    filter:brightness(1);
+}
+
+.foreground-image {
+    position: absolute;
+    top: 52%; /* Centered vertically */
+    left: 7%; /* Adjust to position it inside the card */
+    transform: translateY(-50%);
+    background-color: #000000;
+    border-radius: 50%;
+    padding:2% 2%;
+    width: 75px;
+    height: 75px;
+    z-index: 3; /* Keep it above the banner */
+}
+
+.foreground-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the logo scales nicely */
+    border-radius: 5px; /* Optional: Adds rounded corners to logos */
+}
+
+@media (max-width: 768px) {
+
+    .foreground-image {
+        width:45px;
+        height:45px;
+        top:65%;
+        padding:2% 2%;
+        object-fit: cover;
+    }
+    .cultivator-card {
+        /*background-position: 200px top !important;*/
+        background-position: 80%  top !important;  /*the percentage is how much you want to go to the left, higher, the more left*/
+    }
+
+    .cultivator-card span {
+        font-size:1.5em;
+        padding-left:5%;
+    }
+
+    .cultivator-card:hover {
+        box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.7); /* Red glow effect */
+    }
+
+}
+
+
+
+.cultivator-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.cultivator-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Background of the track */
+
+}
+
+.cultivator-container::-webkit-scrollbar-thumb {
+    background-color: silver; /* Blood red thumb */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Adds a smooth transition to the background-color and box-shadow */
+
+    border-radius: 10px;
+}
+
+.cultivator-container::-webkit-scrollbar-thumb:hover {
+    background-color: #d92d2d; /* Bright ghostly red */
+}
+
+.cultivator-container::-webkit-scrollbar-thumb:active {
+    background-color: #ff4242; /* Darker ghostly red */
+    box-shadow: 
+    0 0 10px #c51e1e, 
+    0 0 20px #9e1717, 
+    0 0 30px #b32b2b, 
+    0 0 50px #7a1212;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+
+
+    /* Style for the floating action button (FAB) */
+    #playMusicBtn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10;
+        background-color: #686666; /* Default background (gray) */
+    }
+
+    /* Active state for the FAB when music is playing */
+    #playMusicBtn.active {
+        background-color: #be0d00; /* Red when active */
+    }
+
+    /* Hover effect to lighten the FAB when hovering */
+    #playMusicBtn:hover {
+        background-color: #000000; /* Lighten on hover */
+    }
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+
+
+
+.page-footer {
+    background-color:black;
+    margin-top: -2vh;
+}
+
+.page-footer ul a {
+    font-family: 'Body';
+    font-size: larger;
+}
+
+.foot-columns {
+    margin-top:-5vh;
+}
+
+.footer-title {
+    line-height:.7;
+    margin:2vh 0 0 -3vw;
+}
+
+.footer-heading {
+    font-family: 'Heading';
+    margin-bottom: -1vh;
+    margin-left: -1vw;
+}
+
+.page-footer .footer-copyright {
+    background-color:rgb(140, 12, 38);
+    text-align:center;
+    justify-items: center;
+    padding:0;
+}
+@media (max-width: 600px) {
+    .nb-logo{
+        margin-top: 0;
+    }
+
+    .page-header h1 {
+        font-size: 75px;
+        margin-top: 25%;
+        line-height: .8;
+    }
+
+    
+    .page-footer {
+        text-align: center;
+
+    }
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin-top:25%;
+        padding-bottom: -20%;
+        font-size: xx-large;
+    }
+
+    .foot-columns .grey-text{
+        font-size: small;
+    }
+
+    .row .content-img {
+        margin-top:0 !important;
+    }
+
+}

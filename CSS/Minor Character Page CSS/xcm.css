@@ -1,0 +1,643 @@
+@import url('../Fonts.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+nav {
+    position:fixed;
+    background:black;
+    box-shadow: none;
+    z-index: 5; /*makes navbar above the carousel, same hierarchy as sidenav*/
+}
+
+
+.nav-wrapper {
+    background: linear-gradient(to bottom, rgba(105, 7, 7, 1), rgb(0, 0, 0));
+    position:relative;
+}
+
+.nb-logo {
+    width:25vw;
+    height:auto;
+    margin-top:-3vh;
+    margin-left: 5%;
+    z-index:15;
+}
+
+.nb-logo:hover{
+    transform: scale(1.2);
+}
+
+.tabs-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.clan-tab {
+    display: inline-flex;
+    margin: 0;
+}
+
+/* Custom scrollbar styles */
+.tabs-wrapper::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar (for horizontal scrolling) */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb {
+    background: #a12727; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering */
+}
+
+.tabs-wrapper::-webkit-scrollbar-track {
+    background: #ada5a5; /* Light gray track background */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+    
+
+.clan-tab li {
+    font-family: 'Heading', sans-serif;
+    text-align: center;
+    width:175px;
+}
+
+.clan-tab li a{
+    color:white;
+    font-size: 40px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.clan-tab li a.lan:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px rgba(0, 119, 255, 0.863);
+}
+
+.clan-tab li a.wen:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px crimson;
+}
+
+.clan-tab li a.minor:hover{
+    color: rgb(255, 255, 255); 
+    font-size: 300%;
+    text-shadow: 0 0 10px rgb(94, 85, 85);
+}
+
+.clan-tab li a.nie:hover{
+    color:rgba(255, 255, 255); 
+    font-size: 300%;
+    text-shadow: 0 0 10px rgb(12, 149, 12);
+}
+
+.clan-tab li a.jiang:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px purple;
+}
+
+.clan-tab li a.jin:hover{
+    color:white; 
+    font-size: 300%;
+    text-shadow: 0 0 10px yellow;
+}
+
+/*SideNav Part*/
+
+.custom-sidenav {
+    background-color: #2b2b2b;
+    border-right: 2px groove rgb(0, 0, 0); 
+    width: 300px; 
+    color:white;
+}
+
+.sidenav-header {
+    background-color:#1f1f1f;
+    text-align:center;
+    height:auto;
+    padding:15px 0px 35px 0px;
+}
+
+.sidenav-header .sidenav-title {
+    font-family: 'Title', sans-serif;
+    transition: color 0.3s ease font-size 0.5s ease;
+    font-size:3em;
+    line-height:.8;
+    margin:0;
+    color:white;
+    word-wrap:break-word;
+    width:100%;
+}
+
+.sidenav .sidenav-title:hover {
+    color:#a80a0a; 
+}
+
+.sidenav .clan-link{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.sidenav .clan-link:hover{
+    background-color: rgb(36, 31, 32);
+}
+
+.clan-symbol {
+    height: auto;
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left:-10px;
+}
+
+.clan-name {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    align-self: center;
+    font-family: 'Heading', sans-serif;
+}
+
+.sidenav .clan-name:hover  {
+    color:#c70202; 
+    font-size:35px;
+}
+
+
+.sidenav-trigger {
+    position: fixed; 
+    top: 15px;       
+    left: 20px;      
+    z-index: 10;   
+    color: white;    
+    padding: 10px;   
+    border-radius: 50%; 
+    display: flex;   /* center icon inside */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/*-----------------------------------PAGE-CONTENT---------------------------------------------------*/
+
+section {
+    margin:0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    margin-top: 7%;
+    background: 
+        linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 1), /* Dark left */
+            rgba(0, 0, 0, 0.7) 40%, /* Gradually lighter at 40% */
+            rgba(0, 0, 0, 0.2) 55%, /* Slightly darker at 60% */
+            rgba(0, 0, 0, 0.2) 90%, /* Slightly darker at 60% */
+            rgba(0, 0, 0, 0.8) 100% /* Darker again at the right */
+        );
+    position: relative;
+}
+
+.parallax img {
+    object-fit: cover;
+    object-position: 80px 250px;
+}
+
+.banner .charname {
+    margin-top:12%;
+    padding-left:3%;
+}
+
+.banner .charname h1{
+    font-family: 'Minor', sans-serif;
+    color:white;
+    font-size:700%;
+    margin-top:-1vh;
+}
+
+.banner .charname h4{
+    font-family: 'LBody', sans-serif;
+    color:rgb(58, 31, 31);
+    font-size:250%;
+}
+
+.banner .charname blockquote{
+    font-family: 'Body', sans-serif;
+    color:white;
+    background-color:#1f1f1f22;
+    border-radius:5px;
+    border-left:5px solid rgb(47, 0, 0);
+    padding:5px 3px 5px 3%;
+    width:50%;
+    left:0;
+    margin-top: 0vh;
+}
+
+/*------------------Lore------------------*/
+.lore {
+    min-height:80vh;
+    width:100%;
+    padding:3vh 5vw;
+    background-color: rgb(151, 150, 150);
+}
+
+.lore .card-panel {
+    background: linear-gradient(to bottom, #D9D9D1, #D1C8B7);
+}
+
+.lore h3{
+    font-family: 'Minor', sans-serif;
+    color:rgb(30, 33, 44);
+}
+
+.lore p {
+    font-family: 'Body', sans-serif;
+    color: black;
+    font-size:1.2em;
+}
+
+
+
+/*----Action Vids------*/
+.action-vid {
+    background-color:#383838;
+    margin-top:-3vh;
+
+}
+
+.collapsible-header{
+    background-color:#383838;
+    border:none;
+    width:100%;
+    padding:0 5%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.chevron-icon {
+    color: #007bff; /* Change to any color you like (e.g., blue) */
+}
+
+.collapsible h3 {
+    color:white;
+    font-family:'Minor', sans-serif;
+}
+
+.collapsible p {
+    font-family: 'Body', sans-serif;
+    color:white;
+    font-size: 1.2em;
+}
+
+.collapsible-header:focus, 
+.collapsible-header:active {
+    background-color: inherit !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/*----Reltree------*/
+.reltree {
+    margin-top:-3vh;
+    background-color: black;
+    height:90vh;
+    overflow-x: auto;
+}
+
+.node {
+    cursor: pointer;
+  }
+
+  .node circle {
+    fill: black; /* Light blue for default */
+    stroke: #ffffff;
+    stroke-width: 2px;
+    transition: transform 0.3s;
+  }
+
+  .node:hover circle {
+    transform: scale(1.2); /* Enlarge on hover */
+  }
+
+  .node text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    fill: #a0a0a0;
+    text-anchor: middle;
+  }
+
+  .relationship-info {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;  /* Ensure tooltip appears on top */
+  }
+  
+
+  .link {
+    stroke-width: 2;
+    fill: none;
+    transition: stroke 0.3s;
+  }
+
+#chart {
+    width: 100%;     /* Allow it to scale */
+    height: 70vh;    /* Adjust height to fit the screen */
+    margin-left:19%;
+}
+
+#tooltip {
+    position: absolute;
+    opacity: 0; 
+    width:450px;
+    background-color: rgba(114, 114, 114, 0.8); 
+    color: white; 
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    pointer-events: none; 
+    font-size: 14px; 
+    z-index: 1000;
+}
+.reltree h3 {
+    font-family:'Minor', sans-serif;
+    padding-left:3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----Funfacts-------*/
+.fun-facts {
+    background: linear-gradient(to bottom, rgb(24, 24, 27), rgb(185, 185, 185));
+    height: 70vh;
+    margin-top:-3vh;
+    padding:3vh;
+}
+
+.fun-facts h3 {
+    font-family: 'Minor', sans-serif;
+    color:white;
+    font-size:2.5em;
+}
+
+.scrollable-row {
+    display: flex; /* Ensures items stay in a single row */
+    overflow-x: auto; /* Allows horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping */
+    padding: 10px; /* Optional padding for aesthetics */
+}
+
+/* Style scrollbar (optional) */
+.scrollable-row::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar-thumb {
+    background-color: darkslategrey;
+    border-radius:10px;
+}
+
+.scrollable-item{
+    position:relative;
+    flex-shrink: 0;
+    width:375px;
+    height:275px;
+    border-radius:10px !important;
+    margin:0px 3%;
+}
+
+.card-image {
+    border-radius: 10px;
+}
+
+.card-title {
+    z-index: 1; /* Ensure it stays above other elements */
+    font-family: 'Minor', sans-serif;
+    font-size:2em !important;
+    bottom:0%;
+    left:0%;
+    width:100%;
+    margin:0 !important;
+}
+
+
+.card-reveal p {
+    font-family: 'Body', sans-serif;
+    font-size: 1em;
+}
+
+.card-reveal {
+    background: linear-gradient(to bottom, #D9D9D1, #D1C8B7);
+    white-space: normal; /* Ensures text wraps to the next line */
+    height: auto; /* Adjust to fit content dynamically */
+    padding: 20px; /* Add padding for readability */
+}
+
+.card-reveal::-webkit-scrollbar {
+    height: 5px;
+}
+
+.card-reveal::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.card-reveal::-webkit-scrollbar-thumb {
+    background-color: darkslategrey;
+    border-radius:10px;
+}
+
+
+
+@media (max-width: 600px) {
+    .nb-logo{
+        margin-top: 0;
+    }
+
+
+    .banner {
+        margin-top:20%;
+        background:linear-gradient(
+            to right, 
+            rgba(0, 0, 0, .8), /* Dark left */
+            rgba(0, 0, 0, 0.4) 40%, /* Gradually lighter at 40%  */
+            rgba(0, 0, 0, 0.1) 60%, /* Slightly darker at 60% */
+            rgba(0, 0, 0, 0.5) 100% /* Darker again at the right */
+        );
+    }
+
+    .banner .parallax img{
+        object-position:  -175px 275px  ;
+    }
+
+    .banner .charname {
+        margin-top:60%;
+        padding-left:3%;
+    }
+    
+    .banner .charname h1{
+        font-family: 'Minor', sans-serif;
+        color:white;
+        font-size:350%;
+        margin-top:-2vh;
+    }
+    
+    .banner .charname h4{
+        font-family: 'LBody', sans-serif;
+        color:rgb(58, 31, 31);
+        font-size:150%;
+    }
+    
+    .banner .charname blockquote{
+        font-family: 'Body', sans-serif;
+        color:white;
+        background-color:#1f1f1f22;
+        border-radius:5px;
+        border-left:5px solid rgb(47, 0, 0);
+        padding:5px 3px 5px 3%;
+        width:100%;
+        left:0;
+        margin-top:0;
+    }
+
+    #chart {
+        margin-left:-30%;
+    }
+
+    .lore p, .action-vid p {
+        font-size: 1em;
+    }
+
+    #tooltip {
+        width: 140px;  /* Smaller width for mobile screens */
+        font-size: 11px; /* Adjust font size */
+        padding: 8px; /* Reduce padding */
+    }
+
+    .content-img {
+        order: 2; /* Image section goes to the bottom */
+    }
+
+    .col.l7 {
+        order: 1; /* Text section goes to the top */
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------FOOTER----------------------------------------------------*/
+
+
+.page-footer {
+    background-color:black;
+    margin-top: -2vh;
+}
+
+.page-footer ul a {
+    font-family: 'Body';
+    font-size: larger;
+}
+
+.foot-columns {
+    margin-top:-5vh;
+}
+
+.footer-title {
+    line-height:.7;
+    margin:2vh 0 0 -3vw;
+    font-family: 'Title', sans-serif;
+}
+
+.footer-heading {
+    font-family: 'Heading';
+    margin-bottom: -1vh;
+    margin-left: -1vw;
+}
+
+.page-footer .footer-copyright {
+    background-color:rgb(140, 12, 38);
+    text-align:center;
+    justify-items: center;
+    padding:0;
+}
+@media (max-width: 600px) {
+    .page-footer {
+        text-align: center;
+
+    }
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin-top:25%;
+        padding-bottom: -20%;
+        font-size: xx-large;
+    }
+
+    .foot-columns .grey-text{
+        font-size: small;
+    }
+
+}

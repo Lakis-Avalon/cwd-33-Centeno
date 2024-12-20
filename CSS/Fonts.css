@@ -1,0 +1,102 @@
+/* a_asian_hiro & dekiru still unused */
+
+@font-face{
+    font-family:'Heading';
+    src: url(../Assets/Fonts/yozakura/YOZAKURA-Regular.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Title';
+    src: url(../Assets/Fonts/hogback/Hogback\ Demo\ Version.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{/* Clan and Character Bodies*/
+    font-family:'Body';
+    src: url(../Assets/Fonts/dekiru/Dekiru.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{/* Landing Bodies*/
+    font-family:'LBody';
+    src: url(../Assets/Fonts/hashiba/Hashiba.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'SSitem';
+    src: url(../Assets/Fonts/a_asian_hiro/aAsianHiro.ttf) format('truetype');
+    src: url(../Assets/Fonts/a_asian_hiro/aAsianHiro.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Lan';
+    src: url(../Assets/Fonts/masmuseh/Masmuseh\ Demo\ Version.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Wen';
+    src: url(../Assets/Fonts/karasha/Karasha-demo.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Minor';
+    src: url(../Assets/Fonts/kungfoo_fighter/KungfooFighterDEMO.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Nie';
+    src: url(../Assets/Fonts/harakiri_special/Harakiri\ Special.otf) format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Jiang';
+    src: url(../Assets/Fonts/moyko/Moyko.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Jin';
+    src: url(../Assets/Fonts/lightmorning/lightmorning.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+@font-face{
+    font-family:'Wangxian';
+    src: url(../Assets/Fonts/harukaze/Harukaze.otf) format('opentype'),
+         url(../Assets/Fonts/harukaze/Harukaze.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'WX-Body';
+    src: url(../Assets/Fonts/japan_wave/Japan\ wave.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'WX-Quote';
+    src: url(../Assets/Fonts/dekiru/Dekiru.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
