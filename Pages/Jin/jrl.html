@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Rulan</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../CSS/Jin Character Page CSS/jrl.css">  
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="icon" type="image/png" href="../../Assets/BG/tab-icon.png">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo center stitle" data-slide="4">
+                <img src="../../Assets/BG/navbar-title-logo.png" class="nb-logo responsive-img">
+            </a>
+        </div>
+        <div class="nav-content"> 
+            <div class="tabs-wrapper">
+            <!--Left Side-->
+            <ul class="left clan-tab">
+                <li><a class="lan" href="../Lan/lan-home.html" data-slide="1" >LAN</a></li>
+                <li><a class="wen" href="../Wen/wen-home.html" data-slide="2" >WEN</a></li>
+                <li><a class="minor" href="../Minor/minor-home.html" data-slide="3" >MINOR</a></li>
+            </ul>
+            
+            
+            <!--Right Side-->
+            <ul class="right clan-tab">
+                <li><a class="nie" href="../Nie/nie-home.html" data-slide="5" >NIE</a></li>
+                <li><a class="jiang" href="../Jiang/jiang-home.html" data-slide="6">JIANG</a></li>
+                <li><a class="jin" href="../Jin/jin-home.html" data-slide="7">JIN</a></li>
+            </ul>
+            </div>
+        </div>
+</nav>
+
+
+<!--Side Navbar-->
+<ul id="slide-out" class="sidenav custom-sidenav">
+    <li class="sidenav-header">
+            <a href="../../index.html" class="sidenav-title">
+                Cultivators' Compendium
+            </a>
+    </li>
+    <li>
+        <a href="../Lan/lan-home.html" class="clan-link">
+            <img src="../../Assets/BG/lan-symbol.webp" class="clan-symbol left" alt="Lan Clan Symbol"> 
+            <span class="clan-name">Lan Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Wen/wen-home.html" class="clan-link">
+            <img src="../../Assets/BG/wen-symbol.webp" class="clan-symbol left" alt="Minor Symbol"> 
+            <span class="clan-name">Wen Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Minor/minor-home.html" class="clan-link">
+            <img src="../../Assets/BG/rogue-symbol.webp" class="clan-symbol left" alt="Rogue Symbol"> 
+            <span class="clan-name">Rogue & Minor</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Nie/nie-home.html" class="clan-link">
+            <img src="../../Assets/BG/nie-symbol.png" class="clan-symbol left" alt="Nie Clan Symbol"> 
+            <span class="clan-name">Nie Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jiang/jiang-home.html" class="clan-link">
+            <img src="../../Assets/BG/jiang-symbol.webp" class="clan-symbol left" alt="Jiang Clan Symbol"> 
+            <span class="clan-name">Jiang Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jin/jin-home.html" class="clan-link">
+            <img src="../../Assets/BG/jin-symbol.webp" class="clan-symbol left" alt="Jin Clan Symbol"> 
+            <span class="clan-name">Jin Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../All.html" class="clan-link">
+            <img src="../../Assets/BG/all-icon.png" class="clan-symbol left" alt="All Symbol"> 
+            <span class="clan-name">All Cultivators</span>
+        </a>
+    </li>
+</ul>
+
+
+<!-- Button to Trigger Sidenav -->
+<a href="#" data-target="slide-out" class="sidenav-trigger">
+    <i class="material-icons">menu</i>
+</a>
+
+
+<!--Page Content -->
+<!--Banner -->
+<section class="banner parallax-container">  
+    <div class="parallax">
+        <img src="../../Assets/Character/Jin/Chacter Page Pics/jrl-banner.png" alt="Character Banner">
+    </div>
+
+    <div class="row">
+        <div class="col s12 charname">
+            <h4>JIN SECT LEADER</h4>
+            <h1>Jin Rulan</h1>
+                <blockquote class="flow-text">
+                    "This is my father's sword. I won't put it down"
+                </blockquote>
+        </div>
+    </div> 
+</section>
+<!--LORE white bg, make textbox border of clan-color-->
+<section class="lore">
+    <div class="row">
+
+        <div class="col l7 s12 push-l5">
+            <div class="card-panel hoverable char-info">
+            <h3>Jin Rulan</h3>
+            <p class="justify">
+                Jin Ling, the son of Jin Zixuan and Jiang Yanli, grew up as an orphan after both of his parents tragically died. 
+                His father, Jin Zixuan, was killed during a confrontation involving Wei Wuxian, and his mother, Jiang Yanli, died protecting Wei Wuxian
+                during the chaos at the Nightless City. As a result, Jin Ling was raised by his maternal uncle Jiang Cheng and his paternal uncle 
+                Jin Guangyao. Both uncles had different approaches to raising him, and Jin Ling grew up as a spoiled child, receiving indulgence due 
+                to his status as the Jin Clan's heir and the absence of his parents.
+                <br><br>
+                The belief that Wei Wuxian was responsible for his parents' deaths fostered resentment and anger in Jin Ling. He grew up 
+                hostile toward Wei Wuxian, who was seen as the cause of his family's tragedy. This animosity persisted even when Wei Wuxian 
+                returned in Mo Xuanyu's body, and their initial interactions were marked by Jin Ling's harsh treatment of Wei Wuxian.
+                <br><br>
+                Throughout their encounters, Jin Ling and Wei Wuxian had a complicated dynamic, with Jin Ling often lashing out at him due to
+                his hatred and unresolved feelings about his parents' deaths. However, as they spent more time together, Jin Ling reluctantly 
+                began to accept Wei Wuxian's help, though he still struggled with his deep-seated anger. When Wei Wuxian's true identity was 
+                revealed, Jin Ling's feelings became more conflicted. In a moment of rage and confusion, he stabbed Wei Wuxian, unable to 
+                reconcile his admiration for the person who had protected him and his belief that Wei Wuxian was to blame for the loss of 
+                his parents. Jin Ling eventually learned the truth—that Wei Wuxian had been framed for the events surrounding his 
+                parents' deaths and was not responsible for their tragedy. 
+            </p>
+            </div>
+        </div>
+
+        <div class="col l5 s12 pull-l7 content-img">
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jrl-meme.jpg" alt="plot summary">
+                <figcaption class="center">As long as you identify which uncle is which, this short summary is the novel in a nutshell</figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jrl-sword.jpg" alt="jrl dadsword">
+                <figcaption class="center">Jin Zixuan letting Jin Ling touch his sword, Suihua. Jin Ling often carries this and uses it</figcaption>
+            </figure>
+            
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jrl-bow.gif" alt="jrl using bow">
+                <figcaption class="center">Jin Ling often uses bows, here he uses it against Wen Ning and the Statue</figcaption>
+            </figure>
+        </div>
+
+
+
+    </div>
+</section>
+
+<!--Action Video if applicable, dark clan-color-->
+<section class="action-vid">
+    <ul class="collapsible popout">
+        <li>
+            <div class="collapsible-header">
+                <h3>&#x2193;Jin Rulan in Action&#x2193; </h3>
+            </div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col l3 s12">
+                        <h3>Jin Rulan</h3>
+                        <p class="justify">
+                            He is adept with the bow. He also has access to lots of equipment as the Jins and Jiangs are very rich. 
+                        </p>
+                    </div>
+                    <div class="col l9 s12">
+                        <figure>
+                            
+                            <video style="width: 100%; height: auto;" class="responsive-video" controls>
+                                <source src="../../Assets/Vids and Audio/jrl-action.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+            
+                            <figcaption class="center white-text">Jin Ling taking down a native snake guai</figcaption>
+                        </figure>
+                    </div>
+                </div>           
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!--Relationship Tree - black bg-, borderlines are of respective clan-color, font-color of headings and title is the clan-color, bodies is white-->
+<section class="reltree">
+    <h3 class="yellow-text text-lighten-2">Relationships</h3>
+    <!-- Chart Container -->
+    <div id="chart"></div>
+
+    <!-- Tooltip -->
+    <!-- The tooltip should be outside of `#chart` since it's a floating element -->
+    <div id="tooltip">
+    </div>
+</section>
+
+
+<!--Carousel - clan-color -->
+<section class="fun-facts">
+    <div>
+        <h3 class="yellow-text text-lighten-3">Trivias</h3>
+        <!-- Card 1 -->
+        <div class="scrollable-row">
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/jin-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Courtesy Name</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator yellow-text text-darken-4">Jin Rulan</span>
+                    <p>
+                        Wei Wuxian gave Jin Ling his courtesy name, Rulan.
+                        According to author Mo Xiang Tong Xiu, Jin Ling dislikes the name, considering it "sissy". It means 
+                        "like an orchid"
+                    </p>
+                </div>            
+            </div>
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/jin-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Death</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator yellow-text text-darken-4">Supposed to be a Fierce Corpse</span>
+                    <p>
+                        The author originally planned to make him die near the end of the novel and make him a fierce corpse but scrapped it
+                        because there was not enough foreshadowing and thus would have been only for shock value and angst.
+                    </p>
+                </div>            
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Footer-->
+
+
+<footer class="page-footer" >
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12 pull-l2 left-align"> 
+                <a href="../../index.html">
+                    <h1 class="footer-title red-text text-darken-4">Cultivators' <br> Compendium</h1>
+                </a>
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Other Clans</h3> 
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../Wen/wen-home.html">Wen</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Minor/minor-home.html">Minor & Rogues</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Nie/nie-home.html">Nie</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jiang/jiang-home.html">Jiang</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jin/jin-home.html">Jin</a></li>
+                </ul>                
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Help</h3>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>© 2024 Cultivators' Compendium. Nonprofit educational use only. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <!-- CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="../../JS/jin/jrl.js"></script>
+</body>
+</html>

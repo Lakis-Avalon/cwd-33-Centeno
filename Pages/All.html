@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Cultivator</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/all.css">  
+    <link rel="icon" type="image/png" href="../Assets/BG/tab-icon.png">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo center stitle" data-slide="4">
+                <img src="../Assets/BG/navbar-title-logo.png" class="nb-logo responsive-img">
+            </a>
+        </div>
+        <div class="nav-content"> 
+            <div class="tabs-wrapper">
+            <!--Left Side-->
+            <ul class="left clan-tab">
+                <li><a class="lan" href="../Pages/Lan/lan-home.html" data-slide="1" >LAN</a></li>
+                <li><a class="wen" href="../Pages/Wen/wen-home.html" data-slide="2" >WEN</a></li>
+                <li><a class="minor" href="../Pages/Minor/minor-home.html" data-slide="3" >MINOR</a></li>
+            </ul>
+            
+            
+            <!--Right Side-->
+            <ul class="right clan-tab">
+                <li><a class="nie" href="../Pages/Nie/nie-home.html" data-slide="5" >NIE</a></li>
+                <li><a class="jiang" href="../Pages/Jiang/jiang-home.html" data-slide="6">JIANG</a></li>
+                <li><a class="jin" href="../Pages/Jin/jin-home.html" data-slide="7">JIN</a></li>
+            </ul>
+            </div>
+        </div>
+</nav>
+
+
+<!--Side Navbar-->
+<ul id="slide-out" class="sidenav custom-sidenav">
+    <li class="sidenav-header">
+            <a href="../index.html" class="sidenav-title">
+                Cultivators' Compendium
+            </a>
+    </li>
+    <li>
+        <a href="../Pages/Lan/lan-home.html" class="clan-link">
+            <img src="../Assets/BG/lan-symbol.webp" class="clan-symbol left" alt="Lan Clan Symbol"> 
+            <span class="clan-name">Lan Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Pages/Wen/wen-home.html" class="clan-link">
+            <img src="../Assets/BG/wen-symbol.webp" class="clan-symbol left" alt="Minor Symbol"> 
+            <span class="clan-name">Wen Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Pages/Minor/minor-home.html" class="clan-link">
+            <img src="../Assets/BG/rogue-symbol.webp" class="clan-symbol left" alt="Rogue Symbol"> 
+            <span class="clan-name">Rogue & Minor</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Pages/Nie/nie-home.html" class="clan-link">
+            <img src="../Assets/BG/nie-symbol.png" class="clan-symbol left" alt="Nie Clan Symbol"> 
+            <span class="clan-name">Nie Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Pages/Jiang/jiang-home.html" class="clan-link">
+            <img src="../Assets/BG/jiang-symbol.webp" class="clan-symbol left" alt="Jiang Clan Symbol"> 
+            <span class="clan-name">Jiang Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Pages/Jin/jin-home.html" class="clan-link">
+            <img src="../Assets/BG/jin-symbol.webp" class="clan-symbol left" alt="Jin Clan Symbol"> 
+            <span class="clan-name">Jin Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Pages/All.html" class="clan-link">
+            <img src="../Assets/BG/all-icon.png" class="clan-symbol left" alt="All Symbol"> 
+            <span class="clan-name">All Cultivators</span>
+        </a>
+    </li>
+</ul>
+
+
+<!-- Button to Trigger Sidenav -->
+<a href="#" data-target="slide-out" class="sidenav-trigger">
+    <i class="material-icons">menu</i>
+</a>
+
+
+<!--Page Content -->
+<section class="page-header">
+    <h1 class="flow-text">Cultivator's Compendium</h1>
+
+    <section class="filter-bar">
+        <div class="filter-section">
+            <!-- Alive/Deceased Buttons -->
+            <button class="slanted-button filter-btn" data-type="status" data-value="alive">
+                <img src="../Assets/BG/alive.png" alt="Alive Icon" class="button-icon">
+            </button>
+            <button class="slanted-button filter-btn" data-type="status" data-value="deceased">
+                <img src="../Assets/BG/dead.png" alt="Dead Icon" class="button-icon">
+            </button>
+        </div>
+    
+        <div class="vertical-divider">
+            <p>Filter</p>
+        </div>
+    
+        <div class="filter-section">
+            <!-- Clan Buttons -->
+            <button class="slanted-button filter-btn" data-type="clan" data-value="lan">
+                <img src="../Assets/BG/lan-symbol.png" alt="Lan Logo" class="button-icon">
+            </button>
+            <button class="slanted-button filter-btn" data-type="clan" data-value="wen">
+                <img src="../Assets/BG/wen-symbol.png" alt="Wen Logo" class="button-icon">
+            </button>
+            <button class="slanted-button filter-btn" data-type="clan" data-value="minor">
+                <img src="../Assets/BG/rogue-symbol.webp" alt="Minor Logo" class="button-icon">
+            </button>
+            <button class="slanted-button filter-btn" data-type="clan" data-value="nie">
+                <img src="../Assets/BG/nie-symbol.png" alt="Nie Logo" class="button-icon">
+            </button>
+            <button class="slanted-button filter-btn" data-type="clan" data-value="jiang">
+                <img src="../Assets/BG/jiang-symbol.webp" alt="Jiang Logo" class="button-icon">
+            </button>
+            <button class="slanted-button filter-btn" data-type="clan" data-value="jin">
+                <img src="../Assets/BG/jin-symbol.webp" alt="Jin Logo" class="button-icon">
+            </button>
+        </div>
+    </section>
+
+
+
+    <div class="cultivator-container">
+    
+        <section class="cultivator-grid">
+            <!-- Example Cultivator Card -->
+
+            <a href="../Pages/Jin/mxy.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jin" 
+                data-name="Mo Xuanyu" 
+                style="background-image: url('../Assets/Character/Jin/Chacter\ Page\ Pics/mxy-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jin-symbol.webp" alt="Jin Sect Logo">
+                </div>
+                <span>Mo Xuanyu</span>
+            </a>
+
+            <a href="../Pages/Jin/jrl.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="jin" 
+                data-name="Jin Rulan" 
+                style="background-image: url('../Assets/Character/Jin/Chacter\ Page\ Pics/jrl-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jin-symbol.webp" alt="Jin Sect Logo">
+                </div>
+                <span>Jin Rulan</span>
+            </a>
+
+            <a href="../Pages/Jin/jyl.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jin" 
+                data-name="Jiang Yanli" 
+                style="background-image: url('../Assets/Character/Jin/Chacter\ Page\ Pics/jyl-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jin-symbol.webp" alt="Jin Sect Logo">
+                </div>
+                <span>Jiang Yanli</span>
+            </a>
+
+            <a href="../Pages/Jin/jzxuan.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jin" 
+                data-name="Mo Xuanyu" 
+                style="background-image: url('../Assets/Character/Jin/Chacter\ Page\ Pics/jzxuan-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jin-symbol.webp" alt="Jin Sect Logo">
+                </div>
+                <span>Jin Zixuan</span>
+            </a>
+
+            <a href="../Pages/Jin/jzxun.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jin" 
+                data-name="Mo Xuanyu" 
+                style="background-image: url('../Assets/Character/Jin/Chacter\ Page\ Pics/jzxun-edit.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jin-symbol.webp" alt="Jin Sect Logo">
+                </div>
+                <span>Jin Zixun</span>
+            </a>
+
+            <a href="../Pages/Jin/jgy.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jin" 
+                data-name="Jin Guangyao" 
+                style="background-image: url('../Assets/Character/Jin/Chacter\ Page\ Pics/jgy-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jin-symbol.webp" alt="Jin Sect Logo">
+                </div>
+                <span>Jin Guangyao</span>
+            </a>
+
+            <a href="../Pages/Jin/jgs.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jin" 
+                data-name="Jin Guangshan" 
+                style="background-image: url('../Assets/Character/Jin/Chacter\ Page\ Pics/jgs-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jin-symbol.webp" alt="Jin Sect Logo">
+                </div>
+                <span>Jin Guangshan</span>
+            </a>
+
+
+            <a href="../Pages/Jiang/yzy.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jiang" 
+                data-name="Yu Ziyuan" 
+                style="background-image: url('../Assets/Character/Jiang/Character\ Page\ Pics/yzy-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jiang-symbol.webp" alt="Jiang Sect Logo">
+                </div>
+                <span>Yu Ziyuan</span>
+            </a>
+
+            <a href="../Pages/Jiang/jwy.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="jiang" 
+                data-name="Jiang Wanyin" 
+                style="background-image: url('../Assets/Character/Jiang/Character\ Page\ Pics/jwy-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jiang-symbol.webp" alt="Jiang Sect Logo">
+                </div>
+                <span>Jiang Wanyin</span>
+            </a>
+
+            <a href="../Pages/Jiang/jfm.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="jiang" 
+                data-name="Jiang Fengmian" 
+                style="background-image: url('../Assets/Character/Jiang/Character\ Page\ Pics/jfm-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/jiang-symbol.webp" alt="Jiang Sect Logo">
+                </div>
+                <span>Jiang Fengmian</span>
+            </a>
+
+            <a href="../Pages/Nie/nhs.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="nie" 
+                data-name="Nie Huaisang" 
+                style="background-image: url('../Assets/Character/Nie/Character\ Page\ Pics/nhs-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/nie-symbol.png" alt="Nie Sect Logo">
+                </div>
+                <span>Nie Huaisang</span>
+            </a>
+
+            <a href="../Pages/Nie/nmj.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="nie" 
+                data-name="Nie Mingjue" 
+                style="background-image: url('../Assets/Character/Nie/Character\ Page\ Pics/nmj-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/nie-symbol.png" alt="Nie Sect Logo">
+                </div>
+                <span>Nie Mingjue</span>
+            </a>
+
+            <a href="../Pages/Minor/xxc.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="minor" 
+                data-name="Xiao Xingchen" 
+                style="background-image: url('../Assets/Character/Minor/Character\ Page\ Pics/xxc-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/rogue-symbol.webp" alt="Minor Logo">
+                </div>
+                <span>Xiao Xingchen</span>
+            </a>
+
+            <a href="../Pages/Minor/szc.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="minor" 
+                data-name="Song Zichen" 
+                style="background-image: url('../Assets/Character/Minor/Character\ Page\ Pics/szc-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/rogue-symbol.webp" alt="Minor Logo">
+                </div>
+                <span>Song Zichen</span>
+            </a>
+
+            <a href="../Pages/Minor/xcm.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="minor" 
+                data-name="Xue Chengmei" 
+                style="background-image: url('../Assets/Character/Minor/Character\ Page\ Pics/xy-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/rogue-symbol.webp" alt="Minor Logo">
+                </div>
+                <span>Xue Chengmei</span>
+            </a>
+
+            <a href="../Pages/Minor/ss.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="minor" 
+                data-name="Su She" 
+                style="background-image: url('../Assets/Character/Minor/Character\ Page\ Pics/ss-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/rogue-symbol.webp" alt="Minor Logo">
+                </div>
+                <span>Su She</span>
+            </a>
+
+            <a href="../Pages/Minor/oyzz.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="minor" 
+                data-name="Ouyang Zizhen" 
+                style="background-image: url('../Assets/Character/Minor/Character\ Page\ Pics/oyzz-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/rogue-symbol.webp" alt="Minor Logo">
+                </div>
+                <span>Ouyang Zizhen</span>
+            </a>
+
+            <a href="../Pages/Minor/mm.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="minor" 
+                data-name="Xiao Xingchen" 
+                style="background-image: url('../Assets/Character/Minor/Character\ Page\ Pics/mm-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/rogue-symbol.webp" alt="Minor Logo">
+                </div>
+                <span>Luo Qingyang</span>
+            </a>
+
+            <a href="../Pages/Wen/wc.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="wen" 
+                data-name="Wen Chao" 
+                style="background-image: url('../Assets/Character/Wen/Character\ Page\ Pics/wc-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/wen-symbol.png" alt="Wen Sect Logo">
+                </div>
+                <span>Wen Chao</span>
+            </a>
+
+            <a href="../Pages/Wen/wql.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="wen" 
+                data-name="Wen Qionglin" 
+                style="background-image: url('../Assets/Character/Wen/Character\ Page\ Pics/wn-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/wen-symbol.png" alt="Wen Sect Logo">
+                </div>
+                <span>Wen Qionglin</span>
+            </a>
+
+            <a href="../Pages/Wen/wq.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="wen" 
+                data-name="Wen Qing" 
+                style="background-image: url('../Assets/Character/Wen/Character\ Page\ Pics/wq-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/wen-symbol.png" alt="Wen Sect Logo">
+                </div>
+                <span>Wen Qing</span>
+            </a>
+
+            <a href="../Pages/Wen/wzl.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="wen" 
+                data-name="Wen Zhuliu" 
+                style="background-image: url('../Assets/Character/Wen/Character\ Page\ Pics/wzl-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/wen-symbol.png" alt="Wen Sect Logo">
+                </div>
+                <span>Wen Zhuliu</span>
+            </a>
+
+            <a href="../Pages/Wen/wrh.html" class="cultivator-card" 
+                data-status="deceased" 
+                data-clan="wen" 
+                data-name="Wen Ruohan" 
+                style="background-image: url('../Assets/Character/Wen/Character\ Page\ Pics/wrh-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/wen-symbol.png" alt="Wen Sect Logo">
+                </div>
+                <span>Wen Ruohan</span>
+            </a>
+
+            <a href="../Pages/Lan/lqr.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="lan" 
+                data-name="Lan Sizhui" 
+                style="background-image: url('../Assets/Character/Lan/Character\ Page\ Pics/lqr-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/lan-symbol.png" alt="Lan Sect Logo">
+                </div>
+                <span>Lan Qiren</span>
+            </a>
+
+            <a href="../Pages/Lan/lsz.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="lan" 
+                data-name="Lan Sizhui" 
+                style="background-image: url('../Assets/Character/Lan/Character\ Page\ Pics/lsz-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/lan-symbol.png" alt="Lan Sect Logo">
+                </div>
+                <span>Lan Sizhui</span>
+            </a>
+
+            <a href="../Pages/Lan/wwx.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="lan" 
+                data-name="Wei Wuxian" 
+                style="background-image: url('../Assets/Character/Lan/Character\ Page\ Pics/wwx-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/lan-symbol.png" alt="Lan Sect Logo">
+                </div>
+                <span>Wei Wuxian</span>
+            </a>
+
+            <a href="../Pages/Lan/lwj.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="lan" 
+                data-name="Lan Wangji" 
+                style="background-image: url('../Assets/Character/Lan/Character\ Page\ Pics/lwj-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/lan-symbol.png" alt="Lan Sect Logo">
+                </div>
+                <span>Lan Wangji</span>
+            </a>
+
+            <a href="../Pages/Lan/lxc.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="lan" 
+                data-name="Lan Xichen" 
+                style="background-image: url('../Assets/Character/Lan/Character\ Page\ Pics/lxc-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/lan-symbol.png" alt="Lan Sect Logo">
+                </div>
+                <span>Lan Xichen</span>
+            </a>
+
+            <a href="../Pages/Lan/ljy.html" class="cultivator-card" 
+                data-status="alive" 
+                data-clan="lan" 
+                data-name="Lan Jingyi" 
+                style="background-image: url('../Assets/Character/Lan/Character\ Page\ Pics/ljy-banner.png');">
+                <div class="foreground-image">
+                    <img src="../Assets/BG/lan-symbol.png" alt="Lan Sect Logo">
+                </div>
+                <span>Lan Jingyi</span>
+            </a>
+
+
+        </section>
+
+    </div>
+
+</section>
+
+<a href="#" class="btn-floating btn-large waves-effect waves-light " id="playMusicBtn">
+    <i class="material-icons">music_note</i>
+</a>
+
+<!-- Hidden Audio Element -->
+<audio id="backgroundMusic" autoplay loop style="display: none;">
+    <source src="../Assets/Vids and Audio/yllz-flute.mp3" type="audio/mp3">
+    <source src="../Assets/Vids and Audio/yllz-flute.ogg" type="audio/ogg">
+    Your browser does not support the audio tag.
+</audio>
+
+<!--Footer-->
+<footer class="page-footer" >
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12 pull-l2 left-align"> 
+                <a href="../../index.html">
+                    <h1 class="footer-title red-text text-darken-4">Cultivators' <br> Compendium</h1>
+                </a>
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Other Clans</h3> 
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../Pages/Lan/lan-home.html">Lan</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Pages/Wen/wen-home.html">Wen</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Pages/Minor/minor-home.html">Minor & Rogues</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Pages/Nie/nie-home.html">Nie</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Pages/Jiang/jiang-home.html">Jiang</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Pages/Jin/jin-home.html">Jin</a></li>
+                </ul>                
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Help</h3>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>© 2024 Cultivators' Compendium. Nonprofit educational use only. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <!-- CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="../JS/All.js"></script>
+</body>
+</html>

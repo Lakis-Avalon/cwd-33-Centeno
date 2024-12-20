@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan Sizhui</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../CSS/Lan Character Page CSS/lsz.css">  
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="icon" type="image/png" href="../../Assets/BG/tab-icon.png">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo center stitle" data-slide="4">
+                <img src="../../Assets/BG/navbar-title-logo.png" class="nb-logo responsive-img">
+            </a>
+        </div>
+        <div class="nav-content"> 
+            <div class="tabs-wrapper">
+            <!--Left Side-->
+            <ul class="left clan-tab">
+                <li><a class="lan" href="../Lan/lan-home.html" data-slide="1" >LAN</a></li>
+                <li><a class="wen" href="../Wen/wen-home.html" data-slide="2" >WEN</a></li>
+                <li><a class="minor" href="../Minor/minor-home.html" data-slide="3" >MINOR</a></li>
+            </ul>
+            
+            
+            <!--Right Side-->
+            <ul class="right clan-tab">
+                <li><a class="nie" href="../Nie/nie-home.html" data-slide="5" >NIE</a></li>
+                <li><a class="jiang" href="../Jiang/jiang-home.html" data-slide="6">JIANG</a></li>
+                <li><a class="jin" href="../Jin/jin-home.html" data-slide="7">JIN</a></li>
+            </ul>
+            </div>
+        </div>
+</nav>
+
+
+<!--Side Navbar-->
+<ul id="slide-out" class="sidenav custom-sidenav">
+    <li class="sidenav-header">
+            <a href="../../index.html" class="sidenav-title">
+                Cultivators' Compendium
+            </a>
+    </li>
+    <li>
+        <a href="../Lan/lan-home.html" class="clan-link">
+            <img src="../../Assets/BG/lan-symbol.webp" class="clan-symbol left" alt="Lan Clan Symbol"> 
+            <span class="clan-name">Lan Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Wen/wen-home.html" class="clan-link">
+            <img src="../../Assets/BG/wen-symbol.webp" class="clan-symbol left" alt="Minor Symbol"> 
+            <span class="clan-name">Wen Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Minor/minor-home.html" class="clan-link">
+            <img src="../../Assets/BG/rogue-symbol.webp" class="clan-symbol left" alt="Rogue Symbol"> 
+            <span class="clan-name">Rogue & Minor</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Nie/nie-home.html" class="clan-link">
+            <img src="../../Assets/BG/nie-symbol.png" class="clan-symbol left" alt="Nie Clan Symbol"> 
+            <span class="clan-name">Nie Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jiang/jiang-home.html" class="clan-link">
+            <img src="../../Assets/BG/jiang-symbol.webp" class="clan-symbol left" alt="Jiang Clan Symbol"> 
+            <span class="clan-name">Jiang Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jin/jin-home.html" class="clan-link">
+            <img src="../../Assets/BG/jin-symbol.webp" class="clan-symbol left" alt="Jin Clan Symbol"> 
+            <span class="clan-name">Jin Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../All.html" class="clan-link">
+            <img src="../../Assets/BG/all-icon.png" class="clan-symbol left" alt="All Symbol"> 
+            <span class="clan-name">All Cultivators</span>
+        </a>
+    </li>
+</ul>
+
+
+<!-- Button to Trigger Sidenav -->
+<a href="#" data-target="slide-out" class="sidenav-trigger">
+    <i class="material-icons">menu</i>
+</a>
+
+
+<!--Page Content -->
+<!--Banner -->
+<section class="banner parallax-container">  
+    <div class="parallax">
+        <img src="../../Assets/Character/Lan/Character Page Pics/lsz-banner.png" alt="Character Banner">
+    </div>
+
+    <div class="row">
+        <div class="col s12 charname">
+            <h4>LAN SECT CULTIVATOR</h4>
+            <h1>Lan Sizhui</h1>
+                <blockquote class="flow-text">
+                    "Lan SiZhui smiled, "Senior you are so much like HanGuang-Jun."
+                    <br><br>
+                    Wei WuXian was puzzled, "Us? How are we alike?" They were obviously like fire and ice. 
+                    However Lan SiZhui only grinned in reply, and led the rest of the group out."
+                </blockquote>
+        </div>
+    </div> 
+</section>
+<!--LORE white bg, make textbox border of clan-color-->
+<section class="lore">
+    <div class="row">
+
+        <div class="col l7 s12 push-l5">
+            <div class="card-panel hoverable char-info">
+            <h3>Lan Sizhui</h3>
+            <p class="justify">
+                Born into chaos during the downfall of the Wen Clan, his earliest years were spent in the 
+                Burial Mounds under the care of the Wen remnants and Wei Wuxian, who treated him with warmth 
+                and kindness despite their dire circumstances. Wen Yuan's innocent laughter and curiosity brought 
+                rare joy to the somber Burial Mounds, where Wei Wuxian lovingly played with him and affectionately 
+                called him "A-Yuan". During their stay in the Burial Mounds, A-Yuan sometimes joins Wei Wuxian when he 
+                goes down to Yiling to get necessities. In one of these outings, they get separated and Lan Sizhui mistakes 
+                a cultivator as his daddy, this happens to be Lan Wangji who tried to visit Wei Wuxian on a guise of a nighthunt.
+                Lan Wangji bought him toys when Wei Wuxian didn't buy him any after asking if he wanted toys due to their tight 
+                situation. This encounter ended after an alarm was triggered about Wen Ning being out of control and with the 
+                help of Lan Wangji, his consciousness returned and that was the last Wen Yuan saw Lan Wangji for a long time. 
+                <br><br>
+                Tragedy struck when the Wen remnants were massacred by the cultivation clans. Wei Wuxian, in an act of 
+                desperation and love, hid A-Yuan away to save him from certain death. Lan Wangji discovered the 
+                sick child during the aftermath, and recognizing the weight of Wei Wuxian's sacrifice, took A-Yuan 
+                into the Lan Clan. Renamed Lan Yuan, he was raised with discipline and care in the Gusu Lan Sect, where 
+                Lan Wangji became a father figure to him. However, Lan Sizhui's memories of his life in the Burial Mounds 
+                faded, leaving only an intangible sense of longing.
+                <br> <br>
+                Years later, during their visit to
+                the Mo Manor, where Wei Wuxian was resurrected in Mo Xuanyu's body, Lan Sizhui displayed his skill which 
+                made Wei Wuxian praise the one who raised him. He also is great in handling situations that need tact such as 
+                addressing Jiang Wanyin who wanted to take Wei Wuxian in Mo Xuanyu's body away.
+                <br><br>
+                In Yi City, along with Jin Rulan, Lan Jingyi, and Ouyang Zizhen, they dealt with Xue Yang's scheme. They got 
+                captured by Xue Yang and caught corpse poisoning and were held hostage by Xue Yang asking for Wei Wuxian to help 
+                him revive Xiao Xingchen. They eventually got saved but were poisoned. These juniors observed how Lan Wangji 
+                acted around 'Mo Xuanyu' as they cooked porridge to cure them. Wei Wuxian made a very spicy porridge and 
+                upon eating this, Lan Sizhui said that, the taste was 'familiar', which Lan Wangji took notice of but made no comment. 
+                While Lan Wangji was fighting Xue Yang and Wei Wuxian was using his techniques to easily fend off the countless 
+                fierce corpses made by Xue Yang, Lan Sizhui told him that he was very similar to Lan Wangji, which Wei Wuxian denied. 
+                Sizhui meant it in the way that their mere presence gives him comfort, that somehow, everything would be alright. 
+                <br><br>
+                Fate led Lan Sizhui back to the Burial Mounds, where he and his companions were kidnapped. As the barriers 
+                broke and fierce corpses attacked, an unexpected twist brought clarity to Lan Sizhui's past. The Wen remnants,
+                preserved in the blood pool, emerged to protect them. This encounter triggered the return of his buried 
+                memories. Finally understanding his origins, Lan Sizhui embraced both his past and his present. Though the Wen Clan
+                was gone, their love and sacrifices lived on in him. After the events of the story, he accompanied Wen Ning
+                to Dafan Village, after telling Wei Wuxian that he remembered him. 
+            </p>
+            </div>
+        </div>
+
+        <div class="col l5 s12 pull-l7 content-img">
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lsz-wyuan.gif" alt="wen yuan">
+                <figcaption class="center">A-Yuan in the Burial Mounds</figcaption>
+            </figure>   
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lsz-meme.png" alt="lsz meme">
+                <figcaption class="center">A-Yuan calling Wei Wuxian and Lan Wangji his parents</figcaption>
+            </figure>   
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lsz-flag.gif" alt="lsz flag">
+                <figcaption class="center">
+                    Lan Sizhui and Lan Jingyi finding out that their Spirit Attraction Flag was stolen by the young master Mo, leading to his death.
+                </figcaption>
+            </figure> 
+            
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lsz-ashes.gif" alt="lsz ashes">
+                <figcaption class="center">
+                    After  the Wen Remnants saved the people during the 2nd Siege of the Burial Mounds, Sizhui and his friends collected their ashes and gave them to Wen Ning.
+                </figcaption>
+            </figure> 
+        </div>
+
+
+
+    </div>
+</section>
+
+<!--Action Video if applicable, dark clan-color-->
+<section class="action-vid">
+    <ul class="collapsible popout">
+        <li>
+            <div class="collapsible-header">
+                <h3>&#x2193;Lan Sizhui in Action&#x2193; </h3>
+            </div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col l3 s12">
+                        <h3>Promising Junior</h3>
+                        <p class="justify">
+                            Wei Wuxian observed them fighting the fierce corpse possessed by the hand of Nie Mingjue 
+                            and he commented that they are good.
+                        </p>
+                    </div>
+                    <div class="col l9 s12">
+                        <figure>
+                            
+                            <video style="width: 100%; height: auto;" class="responsive-video" controls>
+                                <source src="../../Assets/Vids and Audio/lanjunior-action.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+            
+                            <figcaption class="center white-text">Wei Wuxian, on the sidelines while Lan Jingyi and Lan Sizhui take on the fierce corpse</figcaption>
+                        </figure>
+                    </div>
+                </div>           
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!--Relationship Tree - black bg-, borderlines are of respective clan-color, font-color of headings and title is the clan-color, bodies is white-->
+<section class="reltree">
+    <h3 class="blue-text">Relationships</h3>
+    <!-- Chart Container -->
+    <div id="chart"></div>
+
+    <!-- Tooltip -->
+    <!-- The tooltip should be outside of `#chart` since it's a floating element -->
+    <div id="tooltip">
+    </div>
+</section>
+
+
+<!--Carousel - clan-color -->
+<section class="fun-facts">
+    <div>
+        <h3>Trivias</h3>
+        <!-- Card 1 -->
+        <div class="scrollable-row">
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/lan-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Lan Sizhui Gets Buried</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator blue-text text-darken-4">Buried in Bunnies or Dirt</span>
+                    <p>
+                        When taking care of A-Yuan, Wei Wuxian often buried him on the ground with only his head exposed, saying that 
+                        it would help his little radish grow. When Lan Wangji was raising him, Lan Wangji buried him in the many bunnies in the backhill.
+                    </p>
+                </div>            
+            </div>
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/lan-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Deadliest Chewtoy</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator blue-text text-darken-4">A-Yuan's Chewtoy is the Feared Chenqing</span>
+                    <p>
+                        A-yuan often chewed and drooled on Chenqing when playing with Wei Wuxian. 
+                    </p>
+                </div>            
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Footer-->
+
+
+<footer class="page-footer" >
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12 pull-l2 left-align"> 
+                <a href="../../index.html">
+                    <h1 class="footer-title red-text text-darken-4">Cultivators' <br> Compendium</h1>
+                </a>
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Other Clans</h3> 
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../Wen/wen-home.html">Wen</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Minor/minor-home.html">Minor & Rogues</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Nie/nie-home.html">Nie</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jiang/jiang-home.html">Jiang</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jin/jin-home.html">Jin</a></li>
+                </ul>                
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Help</h3>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>© 2024 Cultivators' Compendium. Nonprofit educational use only. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <!-- CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="../../JS/lan/lsz.js"></script>
+</body>
+</html>

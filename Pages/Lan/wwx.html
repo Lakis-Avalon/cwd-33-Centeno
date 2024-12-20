@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wei Wuxian</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../CSS/Lan Character Page CSS/wwx.css">  
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="icon" type="image/png" href="../../Assets/BG/tab-icon.png">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo center stitle" data-slide="4">
+                <img src="../../Assets/BG/navbar-title-logo.png" class="nb-logo responsive-img">
+            </a>
+        </div>
+        <div class="nav-content"> 
+            <div class="tabs-wrapper">
+            <!--Left Side-->
+            <ul class="left clan-tab">
+                <li><a class="lan" href="../Lan/lan-home.html" data-slide="1" >LAN</a></li>
+                <li><a class="wen" href="../Wen/wen-home.html" data-slide="2" >WEN</a></li>
+                <li><a class="minor" href="../Minor/minor-home.html" data-slide="3" >MINOR</a></li>
+            </ul>
+            
+            
+            <!--Right Side-->
+            <ul class="right clan-tab">
+                <li><a class="nie" href="../Nie/nie-home.html" data-slide="5" >NIE</a></li>
+                <li><a class="jiang" href="../Jiang/jiang-home.html" data-slide="6">JIANG</a></li>
+                <li><a class="jin" href="../Jin/jin-home.html" data-slide="7">JIN</a></li>
+            </ul>
+            </div>
+        </div>
+</nav>
+
+
+<!--Side Navbar-->
+<ul id="slide-out" class="sidenav custom-sidenav">
+    <li class="sidenav-header">
+            <a href="../../index.html" class="sidenav-title">
+                Cultivators' Compendium
+            </a>
+    </li>
+    <li>
+        <a href="../Lan/lan-home.html" class="clan-link">
+            <img src="../../Assets/BG/lan-symbol.webp" class="clan-symbol left" alt="Lan Clan Symbol"> 
+            <span class="clan-name">Lan Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Wen/wen-home.html" class="clan-link">
+            <img src="../../Assets/BG/wen-symbol.webp" class="clan-symbol left" alt="Minor Symbol"> 
+            <span class="clan-name">Wen Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Minor/minor-home.html" class="clan-link">
+            <img src="../../Assets/BG/rogue-symbol.webp" class="clan-symbol left" alt="Rogue Symbol"> 
+            <span class="clan-name">Rogue & Minor</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Nie/nie-home.html" class="clan-link">
+            <img src="../../Assets/BG/nie-symbol.png" class="clan-symbol left" alt="Nie Clan Symbol"> 
+            <span class="clan-name">Nie Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jiang/jiang-home.html" class="clan-link">
+            <img src="../../Assets/BG/jiang-symbol.webp" class="clan-symbol left" alt="Jiang Clan Symbol"> 
+            <span class="clan-name">Jiang Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jin/jin-home.html" class="clan-link">
+            <img src="../../Assets/BG/jin-symbol.webp" class="clan-symbol left" alt="Jin Clan Symbol"> 
+            <span class="clan-name">Jin Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../All.html" class="clan-link">
+            <img src="../../Assets/BG/all-icon.png" class="clan-symbol left" alt="All Symbol"> 
+            <span class="clan-name">All Cultivators</span>
+        </a>
+    </li>
+</ul>
+
+
+<!-- Button to Trigger Sidenav -->
+<a href="#" data-target="slide-out" class="sidenav-trigger">
+    <i class="material-icons">menu</i>
+</a>
+
+
+<!--Page Content -->
+<!--Banner -->
+<section class="banner parallax-container">  
+    <div class="parallax">
+        <img src="../../Assets/Character/Lan/Character Page Pics/wwx-banner.png" alt="Character Banner">
+    </div>
+
+    <div class="row">
+        <div class="col s12 charname">
+            <h4>LAN SECT CULTIVATOR</h4>
+            <h1>Wei Wuxian</h1>
+                <blockquote class="flow-text">
+                    “But…Wei WuXian looked slightly to the side. He saw Lan WangJi, who stood beside him, without any hint of hesitation, 
+                    any thought of withdrawing.
+                    <br><br>
+                    But, this time, he wasn't alone anymore.”
+                </blockquote>
+        </div>
+    </div> 
+</section>
+<!--LORE white bg, make textbox border of clan-color-->
+<section class="lore odd">
+    <div class="row">
+
+        <div class="col l7 s12 push-l5">
+            <div class="card-panel hoverable char-info">
+            <h3>Wei Wuxian - Youth</h3>
+            <p class="justify">
+                Wei Wuxian was the child of Wei Changze, the former right hand of the Yunmeng Jiang Sect Leader Jiang Fengmian, and the disciple 
+                of the immortal Baoshan Sanren, Cangse Sanren. They are rogue cultivators who wandered around, helping the common people. Unfortunately, 
+                while his parents were nighthunting, they died. Wei Wuxian, who was left in Yiling ended up becoming a street child after being kicked out 
+                from the inn his parents left him at. He develops a fear of dogs from his time in the streets since they were competition for food and they 
+                tend to attack a small child like him. 
+                <br><br>
+                Things seemed to get better when Jiang Fengmian finds him and brings him back to Lotus Pier. There, Wei Wuxian, grows up with his children, 
+                Jiang Wanyin and Jiang Yanli. The already estranged marriage between Jiang Fengmian and Yu Ziyuan however worsened since rumors that Wei Wuxian was 
+                Jaing Fengmian's bastard have surfaced. This also affected the relationship between Wei WUxian and their children. Yu Ziyuan always pitted 
+                Jiang Wanyin against him but Wei Wuxian is simply better so people say he upstages Jiang Wanyin. He was also often singled out by Yu Ziyuan, 
+                punishing him and even whipping him. Jiang Yanli often tries to distract Yu Ziyuan when she does this. Despite this, he and their children 
+                got along well together in their youth and were quite close. Wei Wuxian was still in an awkward complicated situation in Yunmeng Jiang.
+                <br> <br>
+                During the lectures at Cloud Recesses, Wei Wuxian meets a fuddy-duddy disciple. He is Lan Wangji who intercepted him trying to smuggle alcohol 
+                in Cloud Recesses and for breaking the curfew. They then fight where Wei Wuxian finds out that they are equals. For his whole stay in Cloud 
+                Recesses, Wei Wuxian tried to get Lan Wangji's attention but all he got was 'Shameless', or 'Ridiculous!'. In their lectures, Wei Wuxian 
+                is effortless in answering all the questions despite slacking off. In one of these questions, he proposes another path, the use of resentful energy
+                which makes Lan Qiren kick him out of class. In their visit to Caiyi Town, they discover multiple water ghoul attacks and they offer to help 
+                the Lan Clan investigate the issue. This is where they find that a Waterborne Abyss suddenly appeared, they opted to retreat, but a disciple 
+                lost his sword in the water, so Wei Wuxian saves him, but gets caught in the end. Lan Wangji ends up saving him. 
+                <br><br>
+                In his punishments which Lan Wangji supervised, he still tried to get his attention in anyway he can. They ended up calling each other by birth names 
+                too, a very intimate gesture . Wei Wuxian also drew Lan Wangji while slacking off in punishments, which he thought Lan Wangji got rid of, bbut kept in secret. 
+                Wei Wuxian also slipped a pornography book in Lan Wangji's book which shocked and surprised Lan Wangji, making him draw his sword against Wei Wuxian 
+                who avoids it and slips out of punishment. At the end of the punishments, he gave Lan Wangji rabbits which unbeknownst to Wei Wuxian, Lan Wangji
+                took care of. When the history of the Lan Sect was being discussed, Lan An who was the founder made it with 
+                his cultivation partner and left the cultivation world when she died. People note how it's romantic but Jin Zixuan, Jiang Yanli's fiance', and his 
+                lackeys disrespected her, causing Wei Wuxian to beat him up. Wei Wuxian gets sent back to Lotus Pier ahead of the end of lectures, and 
+                Jiang Yanli's betrothal gets dissolved. 
+                <br><br>
+                After the lectures, the Wens hosted an intersect competition, where Wei Wuxian met Wen Ning who was secretly quite skilled in archery but 
+                has low self-confidence. Wei Wuxian also ended up touching Lan Wangji's ribbon which ended up garnering an explosive reaction from Lan Wangji 
+                who broke his own bow. Lan Wangji left the tournament early but still managed to get the fourth place while Wei Wuxian got first.
+                <br><br>
+                Soon after Cloud Recesses got burned and the Wens took the sect heirs as hostage under the guise of educating the sects. Wei Wuxian repeatedly 
+                tried to help the injured Lan Wangji due to the attack on Cloud Recesses during the whole Wen Indoctrination. They were hunting the Xuanwu of 
+                Slaughter when Wen Chao's mistress said that they should use live bait. Luo Qingyang was targeted but Lan Wangji and Jin Zixuan stood up for her 
+                while Jiang Cheng stopped Wei Wuxian for fear of inciting the anger on their sect. In the end though, Wei Wuxian took Wen Chao hostage which 
+                stopped the live-bait-situation. The commotion awakened the Xuanwu of Slaughter though so Wen Chao managed to escape during the distraction and 
+                locked up all the sect heirs. Before escaping, Wen Chao's mistress did a last attempt against Luo Qingyang, trying to scar her face using a 
+                Wen brand. Wei Wuxian shielded her from the attack and ended up getting branded on his chest. Wei Wuxian distracted the beast while the rest 
+                escaped through an underground tunnel. A disciple in an attempt to help, accidentally shoots Wei Wuxian on the forearm. Lan Wangji stayed behind 
+                with Wei Wuxian and after resting, they kill the Xuanwu of Slaughter. Lan Wangji plays a song for Wei Wuxian as he requested before he lost consciousness 
+                after fighting the Xuanwu.
+                <br> <br>
+                When Wei Wuxian got rescued, he and Lan Wangji parted ways and he woke up in Lotus Pier. Wei Wuxian got blamed for protecting Lan Wangji and 
+                the others, resulting in offending the Wen Sect. Eventually, the Wens visited Lotus Pier and they used an obvious excuse as an imagined slight 
+                against the Wen. It escalated into Wei Wuxian getting whipped repeatedly by Yu Ziyuan with Zidian upon the goading of Wen Chao's mistress.
+                Yu Ziyuan gets fed up with Wang Lingjiao when she insulted her, further escalating the situation by hurting her. The Wens proceeded to attack 
+                Lotus Pier. Yu Ziyuan and the other sect members tried to defend, but the presence of Wen Zhuliu and the sheer number of the Wen forces ended 
+                in their defeat. Before Lotus Pier fell, Yu Ziyuan blamed Wei Wuxian for the attack and made Wei Wuxian promise to protect Jiang Cheng with 
+                his life. While they were escaping, they encountered Jiang Fengmian who also commanded Wei Wuxian to protect Jiang Cheng. After they were quite far 
+                Jiang Cheng took out his anger on Wei Wuxian and blamed him again for the fall of Lotus Pier. Jiang Cheng strangled Wei Wuxian in his range 
+                saying he shouldn't have stood up for Lan Wangji and Jin Zixuan.
+                <br> <br>
+                They then continued on their run from the Wens, trying to go to Meishan, Jiang Cheng's maternal sect. Jiang Cheng unfortunately gets captured 
+                by the Wens and loses his golden core to Wen Zhuliu. Thankfully, Wen Qionglin saves them and brings them to his sister's supervisory office in 
+                Yiling. Wen Ning also took the remains of Yu Ziyuan and Jiang Fengmian and gave them to Jiang Cheng. Wen Qing upon discovery of what Wen Qionglin 
+                did, scolds him, but ends up helping them instead. Since Jiang Cheng lost his core, Wei Wuxian gave his much stronger golden core to Jiang Cheng 
+                with the help of Wen Qing who performed the surgery. This was all done without Jiang Cheng's knowledge, he thought Baoshan Sanren restored it 
+                as said by Wei Wuxian. Wei Wuxian, fresh from surgery unfortunately, went on separate ways with Jiang Cheng where he gets captured by Wen Chao 
+                and Wen Zhuliu. Wen Zhuliu uses his technique on him, but he did not feel a core, he kept quiet about this. Wen Chao sadistically threw 
+                Wei Wuxian on the Burial Mounds, where the place is full of resentment and no one is known to have come back.            
+            </p>
+            </div>
+        </div>
+
+        <div class="col l5 s12 pull-l7 content-img">
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-kid.jpg" alt="wwx kid">
+                <figcaption class="center white-text">
+                    Wei Wuxian with Cangse Sanren and Wei Changze
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwjwwx.webp" alt="wwx and lwj kids">
+                <figcaption class="center white-text">
+                    Official Art of Wei Wuxian and Lan Wangji as kids
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jiang/Character Page Pics/jfm-wy.jpg" alt="wwx brought by jfm to lp">
+                <figcaption class="center white-text">
+                    Jiang Fengmian brought Wei Ying to Lotus Pier
+                </figcaption>
+            </figure> 
+
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-jar.gif" alt="wwx offering tzx">
+                <figcaption class="center white-text">
+                    Wei Wuxian offering Emperor's smile to Wei Wuxian
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/BG/wangxian-banner.webp" alt="wwx and lwj rooftop">
+                <figcaption class="center white-text">
+                    Wei Wuxian and Lan Wangji fighting due to Wei Wuxian's rule breaking.
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwxlwj-spring.gif" alt="wwx offering tzx">
+                <figcaption class="center white-text">
+                    Wei Wuxian bathing with Lan Wangji
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwj-rib1.webp" alt="wwx touching lwj ribbon">
+                <figcaption class="center white-text">
+                </figcaption>
+            </figure> 
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwj-rib2.webp" alt="wwx touching lwj ribbon">
+                <figcaption class="center white-text">
+                    Lan Wangji's reaction to Wei Wuxian touching his ribbon
+                </figcaption>
+            </figure> 
+
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/BG/CP-yzywhip.webp" alt="wwx whipped">
+                <figcaption class="center white-text">
+                    Wei Wuxian getting whipped as per Wang Lingjiao's instructions.
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-choke.png" alt="wwx choked by jiang cheng">
+                <figcaption class="center white-text">
+                    Wei Wuxian getting choked by Jiang Wanyin after their escape
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/BG/CP-nomeltnocore.gif" alt="wzl fail">
+                <figcaption class="center white-text">
+                    Wen Zhuliu using his technique on a coreless Wei Wuxian
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-fall.webp" alt="wwx fall">
+                <figcaption class="center white-text">
+                    Wei Wuxian thrown to Burial Mounds by Wen Chao
+                </figcaption>
+            </figure> 
+
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="lore even">
+    <div class="row">
+
+        <div class="col l7 s12">
+            <div class="card-panel hoverable char-info">
+            <h3>Wei Wuxian - Yiling Laozu</h3>
+            <p class="justify">
+                At the start of the Sunshot Campaign, there was a rumor of many Wen supervisory offices that were brought down through horrific means. 
+                When Lan Wangji and Jiang Wanyin were assigned to take out Wen Chao's office, they see Wen cultivators who died of terrifying means.
+                They follow this trail of dead Wens and they see Wei Wuxian torturing Wen Chao. They find out Wei Wuxian is using resentful energy. 
+                Lan Wangji immediately told Wei Wuxian that it is harmful to the body. Lan Wangji further asked Wei Wuxian to come back to Gusu with him. 
+                Wei Wuxian takes this as Lan Wangji wanting to punish him so he vehemently disagrees.
+                <br> <br>
+                Wei Wuxian was vital in winning the war. The main advantage of the Wens is the sheer number of their disciples 
+                against the sects from the Sunshot faction. Wei Wuxian easily bridged this with his cultivation, making fierce corpse armies from the dead. 
+                Wei Wuxian also dug up the ancestors of the Wens as further insult. Wei Wuxian made Stygian Tiger Tally, a very powerful tool that allowed 
+                the people to siege the Nightless City where Wen Ruohan was killed by the Venerated Trio. 
+                <br><br>
+                After the Sunshot Campaign, Wei Wuxian was admired from the start for his power. He eventually became a pariah because he did not bring his 
+                sword and used his flute, Chenqing instead. The main cause why he was targeted however, is that he was a servant who is extremely brilliant, 
+                people wanted his creations, mainly the Stygian Tiger Tally. The Jins are the ones that lead asking Wei Wuxian to give the Tally to them, 
+                the sect who had the least participation in Sunshot, only joining when it was already won. Wei Wuxian was eventually approached by a 
+                disheveled Wen Qing, asking for his help because her family was kidnapped including Wen Qionglin. 
+                <br><br>
+                Wei Wuxian snuck onto a Jin banquet where he asked for the location of the Wens but was repeatedly disregarded. Wei Wuxian then uses his power, 
+                getting the attention of the people. Upon asking for the location again, people again told him that the 'Wen-dogs' should just die. He calls 
+                out the people who were formerly on the Wen faction but jumped ship when the Wens were losing. Using their logic, he said, should he kill them?
+                He eventually got the location but the banquet made people brand him as an out of control dog. 
+                <br><br>
+                When they reach Qiongqi Path, he sees the horrific treatment of the Jin cultivators against the Wen Qing's family. They find Wen Ning half-dead 
+                and to prevent him from dying, Wei Wuxian used resentment. They killed the Jin cultivators in the camp where the the cultivators that followed 
+                them witnessed the carnage. They took the side of the remaining Jin cultivators who pretended to be innocent. Lan Wangji also prevented Wei Wuxian 
+                from attacking. They ended up escaping and settling on the Burial Mounds. 
+                <br><br>
+                Jiang Cheng later on visits them and sees that the Wens were just civilians, elders, and a child. Jiang Cheng says that even if they saved their life 
+                they should just let them die. Jiang Cheng further makes him a target when Wei Wuxian says he wants to secede by stating that he also declared 
+                himself the enemy of the Cultivation World. A while later, Lan Wangji also visits him under the guise of a nearby nighthunt, where A-Yuan mistakes 
+                him for his father. They then eat a meal but Wen Ning's alarm is triggered. Wei Wuxian has been trying to restore Wen Ning after they escaped
+                Qiongqi Path but with the help of Lan Wangji, his consciousness was returned. Wei Wuxian then escorts Lan Wangji as he is about to return home, where 
+                he talks about how he has no choice. He is aware of the situation himself, how he will becaome a target if he saves these Wen Remnants by the cultivation 
+                world. He still goes throught that path because this is the only path he can do where he will not betray his morals. 
+                <br><br>
+                Jiang Yanli and Jin Zixuan got married and had a child Jin Rulan. They invited Wei Wuxian for his 100-day Celebration. On his way, Wei Wuxian 
+                gets ambushed by 300 cultivators wanting to kill him. Wei Wuxian fights back but holds back since he is on the way to a celebration. People 
+                continued attacking so he fought back, during the skirmish, Jin Zixuan appears. He asked Wei Wuxian to lay down his weapon, while 300 people were 
+                trying to kill him. He attempts to go close to Wei Wuxian, but Wen Ning thinks of him as a threat, accidentally killing him. The sects asked for 
+                Wen Ning and Wen Qing to surrender themselves as payback and then they will leave Wei Wuxian and the remnants alone. 
+                <br><br>
+                After murdering Wen Qing, the sects go back on their word and proceeds to plan to siege the Burial Mounds the next day. Wei Wuxian upon hearing 
+                this confronts the sects. While reasoning with them, Wei Wuxian gets attacked first. Wei Wuxian fights back against the cultivators wanting to kill 
+                him and the Wens the next day. Lan Wangji again, stops him from using resentment while people are trying to kill him. Jiang Yanli enters the fight 
+                while unarmed, asking Wei Wuxian to stop. She gets attacked and Wei Wuxian stops attacking on his side, hurrying towards Jiang Yanli. A cultivator 
+                tries to kill him while he is distracted but Jiang Yanli sees this and pushes him away, getting the killing blow herself instead. Upon witnessing the 
+                deaths of multiple people important to him and thousands of cultivators wanting to kill him, Wei Wuxian loses control. 
+                <br> <br>
+                Wei Wuxian uses the Stygian Tiger Tally and kills approximately 3000 cultivators. Wei Wuxian loses consciousness from being so exhausted and 
+                using the Tally. Lan Wangji carries Wei Wuxian to safety in Yiling unbeknownst to Wei Wuxian. Lan Wangji tries to tell Wei Wuxian that 
+                he loves him, but Wei Wuxian's mind is muddled in resentment, he's out of sorts and can only say 'Get Lost!' to him. Lan Wangji defends 
+                Wei Wuxian against his elders who came to find him, only injuring them. Lan Wangji brings back Wei Wuxian to the Burial Mounds then 
+                returns to Gusu for his punishment, unaware of the things Lan Wangji did to help him.
+                <br> <br>
+                Jiang Cheng leads the siege against the Burial Mounds to kill Wei Wuxian after his sister Jiang Yanli saved him from death. The four major clans, 
+                Nie, Lan, Jin, Jiang, worked together to murder the Wen Remnants in the Burial Mounds. Wei Wuxian hid A-Yuan before he used the Stygian Tiger 
+                Tally, attempting to destroy it, because the sects truly wanted his creations, not justice. He dies during the siege, and the cultivators 
+                who condemned his cultivation, his creations, took the very things they condemned as spoils from the siege, using them for their own profit.
+            </p>
+            </div>
+        </div>
+
+        <div class="col l5 s12 content-img">
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-yllz.webp" alt="yllz">
+                <figcaption class="center white-text"></figcaption>
+            </figure>   
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-yllz2.webp" alt="yllz">
+                <figcaption class="center white-text"></figcaption>
+            </figure>  
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-yllz3.webp" alt="yllz">
+                <figcaption class="center white-text"></figcaption>
+            </figure>  
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-yllz4.webp" alt="yllz">
+                <figcaption class="center white-text">Wei Wuxian in the Burial Mounds, learning to cultivate resentful energy to survive</figcaption>
+            </figure>  
+            
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Wangxian Assets/gif-bg-all.gif" alt="yllz entrance">
+                <figcaption class="center white-text">
+                    Wei Wuxian saving the losing Sunshot Campaign cultivators
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Wen/Character Page Pics/wzl-suffer.webp" alt="wzl death">
+                <figcaption class="center white-text">
+                    Wei Wuxian killing Wen Zhuliu
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-qq.gif" alt="wwx help">
+                <figcaption class="center white-text">
+                    Wei Wuxian helping the revived Wen Ning take revenge
+                </figcaption>
+            </figure> 
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-ayuan.gif" alt="wwx ayuan">
+                <figcaption class="center white-text">
+                    Wei Wuxian caring for A-yuan
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-wqty.jpg" alt="wq and wn sacrifice">
+                <figcaption class="center white-text">
+                    Wen Qing paralyzed Wei Wuxian so he couldn't stop her and Wen Ning from surrendering themselves to the sects so they would be left alone. Unfortunately, the sects back out on their words.
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jyl-death.jpg" alt="jyl death">
+                <figcaption class="center white-text">
+                    Jiang Yanli dying from being attacked by cultivators
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwj-carry.gif" alt="wwx lwj">
+                <figcaption class="center white-text">
+                    Lan Wangji carrying Wei Wuxian back to Yiling
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-siege.webp" alt="wwx siege">
+                <figcaption class="center white-text">
+                    Jiang Wanyin lead the siege against the Burial Mounds followed by the Jins, Nie, Lan. They murdered the Wen Remnants and then used the 
+                    inventions of the Yiling Patriarch for profit.
+                </figcaption>
+            </figure> 
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="lore odd">
+    <div class="row">
+
+        <div class="col l7 s12 push-l5">
+            <div class="card-panel hoverable char-info">
+            <h3>Wei Wuxian - Resurrection of the Yiling Laozu</h3>
+            <p class="justify">
+                13 Years after the death of Wei Wuxian, an exiled cultivator from Jin, Jin Guangshan's bastard, Mo Xuanyu performs a ritual. 
+                Mo Xuanyu summons Wei Wuxian and offers his body for him to inhabit. Wei Wuxian is left with no clue except the gashes in his arm what to do as Mo Xuanyu 
+                forgot to put down his commands for Wei Wuxian. If Wei Wuxian fails to follow his command in exchange for the body, his soul 
+                will be torn apart. In the Mo Manor, he encounters Mo Xuanyu's maternal family who abuses him as well as cultivators from the 
+                Lan Clan. During the night, Mo Xuanyu's cousin dies because he stole the spirit summoning flag used by the Lan cultivators. 
+                This invention was made by Wei Wuxian, the person whose creations and cultivation was scorned by the cultivation world. It was being 
+                used by cultivators in the cultivation world. Thanks to his death, a gash disappears from Wei Wuxian's arm since his cousin 
+                died from his invention. A fierce corpse arm also appeared, it was exceptionally strong and later killed off the remaining Mo 
+                family members, finally freeing Wei Wuxian of the gashes on his arm. Mo Xuanyu's request was fulfilled, he owns the body. After helping 
+                the Lan cultivators fend off the arm, he quickly flees from the scene quickly hoping to not encounter Lan Wangji. 
+                <br><br>
+                Wei Wuxian then goes to Dafan Mountain where something mysterious is happening. There he meets a Jin heir which he calls someone raised with no parents, expecting him 
+                to be one of Jin Guangshan's bastards, not knowing he already died. Jiang Wanyin appears, angry at him, making him realize that the kid 
+                is Jin Rulan, Jiang Yanli and Jin Zixuan's child. Wei Wuxian is so guilt ridden upon knowing and escaping from Jiang Wanyin. Eventually
+                they discover that the statue in the mountain became living, taking souls in exchange for wishes. It proved to be a formidable force and it 
+                targeted Jin Rulan. Wei Wuxian, in an attempt to help, plays a makeshift bamboo flute hoping to summon a strong fierce corpse. He is surprised 
+                to find Wen Qionglin who was supposed to be destroyed upon the clan's agreement. Wen Ning easily defeats the statue but Jin Rulan attacks Wen Ning, 
+                trying to get revenge so Wen Ning attacks in return. Wei Wuxian plays a very familiar, soothing song which effectively stops 
+                Wen Ning from attacking. Before he finishes playing though, his hand gets grabbed from behind, Lan Wangji gripping his hand and scrutinizing 
+                him.
+                <br><br>
+                Jiang Wanyin soon arrives and immediately whips Wei Wuxian with Zidian. This weapon when whipped on a body possessed by a spirit, separates them. 
+                Lan Wangji defends Wei Wuxian stopping the attack with a strum of his guqin. Jiang Cheng suspects that he is Wei Wuxian. 
+                He wanted to bring back Wei Wuxian to Lotus Pier, where it is well known that those he brought back are never seen again. 
+                Wei Wuxian again tries to escape and Jiang Wanyin tries to whip him but this time, the attack lands. Thankfully, Mo Xuanyu's body 
+                was willingly given, rendering its ability ineffective against Wei Wuxian. In order to get the two out of his back, Wei Wuxian pretends to be 
+                a lunatic cutsleeve, saying Jiang Wanyin is not his type and Lan Wangji is his type, expecting them to be disgusted. He successfully repels 
+                Jiang Wanyin, but Lan Wangji surprisingly agrees, then takes him back to Cloud Recesses.
+                <br><br>
+                Wei Wuxian is forcibly dragged into Cloud Recesses. He was sent to Lan Wangji's personal quarters. There he found that his floorboards conceal 
+                bottles of Emperor's Smile underneath them, Wei Wuxian's favorite alcohol. He tried to steal a jade token from someone bathing, but 
+                he finds out that Lan Wangji has scars on his back. Wei Wuxian acted like what he thought Mo Xuanyu would act, often trying to sidle up 
+                to Lan Wangji and trying to make him push him away or kick him out. He never does
+                <br><br>
+                The appearance of the strong arm and Wen Ning who was supposed to be destroyed over a decade ago were suspicious to Wei Wuxian. He and Lan Wangji 
+                ended up investigating this case. Their first lead is in the Man-Eating Castle in Qinghe. There they encounter a Jin Rulan who is cursed.
+                The secret of the Nie Sect was also uncovered, where they use fierce corpses to neutralize their sabres filled with resentful energy. Among 
+                the corpses, they find one of the parts of the fierce corpse the strong arm belongs to. Wei Wuxian also finds out that Wen Ning is being controlled 
+                by skull piercer nails attached on the back of his head. Wei Wuxian removes this and Wen Ning breaks free from the control. Wen Ning hides 
+                for a while after this.Wei Wuxian takes Jin Ling's curse into himself and apologizes to him for insulting him about his dead parents. He faints from the curse, but Lan Wangji 
+                finds him and slips up, calling him, 'Wei Ying!'. 
+                <br><br>
+                Wei Wuxian asks Lan Wangji how he found out his identity, but Lan Wangji tells him to find out himself. They continue their investigation and they hear 
+                about the massacre of the Chang Clan by Xue Yang and his capture by Xiao Xingchen and Song Zichen. This leads them to Yi City, where they find out 
+                Xue Yang has worked for the Jins because he can imitate Wei Wuxian's work to an extent. He was the one who made the skullpiercer nails used on 
+                Wen Ning. In Yi City, they saw the tragedy of Xiao Xingchen and Song Zichen before they killed Xue Yang. They stopped at an inn where they 
+                mourned Xiao Xingchen who was tricked by Xue Yang into killing people. Lan Wangji and Wei Wuxian were drinking together, Lan Wangji ended up 
+                acting differently when he was drunk, binding Wei Wuxian with the Lan forehead ribbon only supposed to be touched by family or cultivation 
+                partners and calling Wei Wuxian, 'Mine' among other things. 
+                <br><br>
+                They next attend the conference in Koi Tower to further investigate. Wei Wuxian transforms into a paperman to spy discreetly. He enters 
+                Jin Guangyao's secret chambers where he finds Nie Mingjue's head and Jin Guangyao arguing with Qin Su, his wife about something, ending 
+                in him incapacitating her, he immediately informs Lan Wangji of it. They demand Jin Guangyao to show his chambers, which he complies with, 
+                but they find nothing. Wei Wuxian gets attacked and he blocks it by drawing a sword stored in one of the shelves. People in the room had 
+                horrified looks pointed to him, the sword was 'Suibian', Wei Wuxian's sword. Lan Wangji gets them both out of the chambers, attempting to escape. 
+                Wei Wuxian asks Lan Wangji to make sure of his decision, because his reputation will be damaged if he joins Wei Wuxian. Lan Wangji stands by his side 
+                and they continue their escape, but before they do, Jin Ling stabs him on his side. 
+                <br><br>
+                Wei Wuxian wakes up in Gusu, injured. He is in Lan Wangji's quarters. He decides to look around the room, where he sees a stack of books 
+                with the written rules of Gusu Lan. The writing looks familiar, along with the peony used as a bookmark. He reads about the rule of the 
+                Lan forehead ribbon. They tell Lan Xichen what they saw but Lan Xichen decides to withhold his view on the matter since he trusts Jin Guangyao. 
+                Jin Guangyao ends up visiting Cloud Recesses and gives back his Jade Token. People have arranged a second siege on the Burial Mounds because 
+                the junior cultivators were kidnapped, they blame Wei Wuxian. 
+                <br><br>
+                Lan Wangji and Wei Wuxian arrive on Burial Mounds with Wen Ning and they reach the juniors first, freeing them. The cultivators who are 
+                sieging the Burial Mounds finally reach them but they lose their spiritual powers. Again, people are blaming Wei Wuxian, but Lan Wangji is standing 
+                beside him every step of the way. Lan Wangji refuted the accusations against Wei Wuxian. They investigate and find out that the Moling Su 
+                Sect was behind their spiritual energy loss. Upon attacking them, their robes get torn as well, revealing scars from casting the Hundred Holes Curse 
+                , the curse Jin Zixun accused Wei Wuxian of casting on him. The array for protection gets broken and the sheer number of fierce corpses
+                break in and start killing the cultivators. Lan Wangji and Wei Wuxian acted as lures for the fierce corpses and asked the cultivators to leave. 
+                Surprisingly, the Wen Remnants that they left on the blood pool maliciously after murdering 
+                them on the first siege rose from the blood pool. The Wen Remnants and Wei Wuxian saved them, people thought it was for their forgiveness, 
+                but Wei Wuxian said it was not. He said everyone will remember what they did.
+                <br><br>
+                They rest up on Yunmeng. There Wei Wuxian brings Lan Wangji to the Jiang ancestral hall where he recalls of his childhood in Lotus Pier. 
+                Jiang Cheng appears, furious at them for showing their face in the public ancestral hall. He insults them and says he can fight against the 
+                both of them. Wei Wuxian ends up bleeding from his orifices and just asks Lan Wangji to leave. Jiang Wanyin attempts to whip them but Wen Qionglin 
+                steps in and intercepts the attack. Wen Ning is fed up and reveals to Jiang Wanyin that the golden core in his body is Wei Wuxian. This revelation 
+                shocks everyone. Wen Ning explains how Wen Qing did it, why he never used his sword again and how he did not want Jiang Wanyin to know because 
+                he is fragile. As a conclusion, Wen Qionglin says that Jiang Wanyin would never be able to surpass or equal Wei Wuxian. They then leave
+                Lotus Pier and head to Yunping, a place of interest because Jin Guangyao had a land title in Yunping from his chambers. 
+                <br><br>
+                They stop at an inn where Lan Wangji and Wei Wuxian drank together once again. Lan Wangji acts childish again with Wei Wuxian. They chase each 
+                other around the privacy screen and then they ask for a tub. Wei Wuxian helps Lan Wangji take a bath and then with their suggestive gestures, 
+                they kiss and then they break the bathtub. They both end up stroking each other in the bed and after their release, Lan Wangji snaps out 
+                of his drunkenness. Wei Wuxian, assuming Lan Wangji regretted it, played it off like it was normal between men, unknowingly hurting Lan Wangji 
+                too. They both end up getting separate rooms but Wei Wuxian continues his investigation.
+                <br><br>
+                He goes to the Guanyin Temple where he sees Lan Xichen under hostage by Jin Guangyao. Jin Ling appears and gets attacked so Wei Wuxian gets out 
+                of hiding and saves him. Jin Guangyao taking advantage of the situation, takes Wei Wuxian as hostage as well, and asks him how things are going 
+                with Lan Wangji. Wei Wuxian gets confused by this because he still thinks Lan Wangji does not love him. Lan Xichen gets angered for his brother 
+                saying anyone would know how obvious it is Lan Wangji loves him. He's angry that Lan Wangji who was always obedient, disobeyed the rule for him, 
+                calling him his only mistake. Wei Wuxian is surprised by this fact and at the same time, Lan Wangji arrives. Jin Guangyao, holding him 
+                hostage, demands Lan Wangji seal his core and drop his weapons, which he complies with all for Wei Ying's safety.
+                <br><br>
+                Not one to wait, Wei Wuxian blurts out that he reallyn wanted to sleep with Lan Wangji, shocking everyone. Jin Guangyao lets Wei Wuxian go and he immediately 
+                bounds towards Lan Wangji. During the whole temple situation, they were both next to each other, confessing their love and being affectionate.
+                Nie Mingjue's corpse eventually appeared and tried to kill those of Jin Blood. With the others' help, they manage to seal Nie Mingjue. For one last time, 
+                Nie Mingjue gets unsealed because Lan Xichen gets tricked into stabbing Jin Guangyao. Nie Mingjue takes Jin Guangyao with him to the coffin and it 
+                gets sealed once again. After the debacle, they both elope.  
+
+
+
+
+                
+
+
+            </p>
+            </div>
+        </div>
+
+        <div class="col l5 s12 pull-l7 content-img">
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-blamed.webp" alt="wwx blame">
+                <figcaption class="center white-text">People blamed Wei Wuxian because Lotus Pier fell</figcaption>
+            </figure>   
+            
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-illlive.jpg" alt="wwx meme">
+                <figcaption class="center white-text">
+                    Wei Wuxian being summoned out of nowhere
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwjwwx-fakeid.webp" alt="lwj mxy">
+                <figcaption class="center white-text">Lan Wangji grabbing 'Mo Xuanyu' who played a song </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-gif1.gif" alt="lwj type">
+                <figcaption class="center white-text">Wei Wuxian trying to make Lan Wangji disgusted with him so he can escape</figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Wangxian Assets/drunklwj.gif" alt="lwj drunk">
+                <figcaption class="center white-text">Lan Wangji getting drunk, acts childish</figcaption>
+            </figure>
+
+                        
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwj-def.webp" alt="lwj efending wwx">
+                <figcaption class="center white-text">
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwj-vs xy.webp" alt="lwj efending wwx">
+                <figcaption class="center white-text">
+                    Lan Wangji defending Wei Wuxian from Xue Yang
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-comfort yicity.gif" alt="xxc ded">
+                <figcaption class="center white-text">
+                    Lan Wangji comforts Wei Wuxian when Xue Yang mocks Xiao Xingchen for doing the righteous and good thing.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Wangxian Assets/wangxian-nmjflashback.webp" alt="wx flashback">
+                <figcaption class="center white-text">Wei Wuxian, wondering in hindsight why he thought Lan Wangji hated him</figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-stand.gif" alt="lwj there">
+                <figcaption class="center white-text">
+                    Lan Wangji refuting all the false claims against Wei Wuxian.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/wwx-gcreveal.jpg" alt="jc weak">
+                <figcaption class="center white-text">
+                    The truth about Jiang Wanyin's core is revealed
+                </figcaption>
+            </figure>
+
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwjwwx-fauxwed.webp" alt="lwj wwx edding">
+                <figcaption class="center white-text">
+                    Lan Wangji and Wei Wuxian drawing the attention of the fierce corpses who are attacking.
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Wangxian Assets/wangxian-guanyinsticky.jpg" alt="wangxian pda">
+                <figcaption class="center white-text">
+                    Them being sticky right after confession,
+                </figcaption>
+            </figure> 
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Lan/Character Page Pics/lwjwwx-pc.webp" alt="wangxian dads">
+                <figcaption class="center white-text">
+                    Sizhui hugging his father figures
+                </figcaption>
+            </figure> 
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="wangxian-love">
+    <h2>Know More >></h2> 
+    <a href="../wangxian.html">
+        <img src="../../Assets/BG/wangxian-pg-link.webp" alt="Wangxian Button">
+    </a>
+    <h2><< About Wangxian</h2>
+</section>
+
+
+<!--Action Video if applicable, dark clan-color-->
+<section class="action-vid">
+    <ul class="collapsible popout">
+        <li>
+            <div class="collapsible-header">
+                <h3>&#x2193; >>Wei Wuxian in Action<< &#x2193; </h3>
+            </div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col l3 s12">
+                        <h3>Founder of 'Demonic' Cultivation</h3>
+                        <p class="justify">
+                            Wei Wuxian unlike how people portrayed him as a villainous figure did not actually do demonic cultivation(mo dao),
+                            rather, he did ghost cultivation(gui dao). Regardless, a lot of people tried to copy him expecting to be as powerful as him. One of them 
+                            is Xue Yang, who was really amazed by his works stolen by the Jins. Xue Yang made very powerful creations from Wei Wuxian's notes, 
+                            but once again, Wei Wuxian is the Founder. He is simply better. 
+                        </p>
+                    </div>
+                    <div class="col l9 s12">
+                        <figure>
+                            
+                            <video style="width: 100%; height: auto;" class="responsive-video" controls>
+                                <source src="../../Assets/Vids and Audio/lwjwwx-xyfight.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+            
+                            <figcaption class="center white-text">Wei Wuxian and Lan Wangji, fighting Xue Yang. Wei Wuxian uses a 'low-level' spell to take down Xue Yang's fierce corpses.</figcaption>
+                        </figure>
+                    </div>
+                </div>           
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!--Relationship Tree - black bg-, borderlines are of respective clan-color, font-color of headings and title is the clan-color, bodies is white-->
+<section class="reltree">
+    <h3 class="blue-text">Relationships</h3>
+    <!-- Chart Container -->
+    <div id="chart"></div>
+
+    <!-- Tooltip -->
+    <!-- The tooltip should be outside of `#chart` since it's a floating element -->
+    <div id="tooltip">
+    </div>
+</section>
+
+
+<!--Carousel - clan-color -->
+<section class="fun-facts">
+    <div>
+        <h3>Trivias</h3>
+        <!-- Card 1 -->
+        <div class="scrollable-row">
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/lan-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Watermelon Rinds</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator blue-text text-darken-4">They are Delicious</span>
+                    <p>
+                        Wei Wuxian often teased Lan Wangji during lectures, saying stuff like, lotus seeds with the 
+                        stems on are tastier, and watermelon rinds are delicious when fried. To add to this, Wei Wuxian, 
+                        when he was living on the streets of Yiling, ate leftover watermelon rinds in the streets. He
+                        became known as the smiling child who collects watermelon rinds to eat.  
+                    </p>
+                </div>            
+            </div>
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/lan-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Dogs</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator blue-text text-darken-4">Lan Wangji Will Chase Them Away</span>
+                    <p>
+                        During his time living in the streets, Wei Wuxian developed a fear of dogs because they would attack him. There is a 
+                        competition for food too aside from inherently hostile dogs.
+                    </p>
+                </div>            
+            </div>
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/lan-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Yiling Laozu Was Horrific</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator blue-text text-darken-4">Horrifically Handsome of an Eligible Bachelor</span>
+                    <p>
+                        The cultivation world made a list of the most eligible bachelors in their generation. 
+                        Lan Xichen is ranked first. <br>
+                        Second is his brother Lan Wangji. <br>
+                        Third is Jin Zixuan (list maker was bribed by Jin Guangshan). <br>
+                        Fourth is Wei Wuxian. 
+                    </p>
+                </div>            
+            </div>
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/lan-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Wifi</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator blue-text text-darken-4">Wei Wuxian's Nickname is Wifi</span>
+                    <p>
+                        Mo Xiang Tong Xiu referred to Wei Wuxian in her author's notes as Wi-Fi. 
+                        This is because Wi-Fi = 无线 (wuxian) is a homophone of his courtesy name.
+                    </p>
+                </div>            
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Footer-->
+
+
+<footer class="page-footer" >
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12 pull-l2 left-align"> 
+                <a href="../../index.html">
+                    <h1 class="footer-title red-text text-darken-4">Cultivators' <br> Compendium</h1>
+                </a>
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Other Clans</h3> 
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../Wen/wen-home.html">Wen</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Minor/minor-home.html">Minor & Rogues</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Nie/nie-home.html">Nie</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jiang/jiang-home.html">Jiang</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jin/jin-home.html">Jin</a></li>
+                </ul>                
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Help</h3>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>© 2024 Cultivators' Compendium. Nonprofit educational use only. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <!-- CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="../../JS/lan/wwx.js"></script>
+</body>
+</html>

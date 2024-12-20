@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Guangyao</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../CSS/Jin Character Page CSS/jgy.css">  
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="icon" type="image/png" href="../../Assets/BG/tab-icon.png">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo center stitle" data-slide="4">
+                <img src="../../Assets/BG/navbar-title-logo.png" class="nb-logo responsive-img">
+            </a>
+        </div>
+        <div class="nav-content"> 
+            <div class="tabs-wrapper">
+            <!--Left Side-->
+            <ul class="left clan-tab">
+                <li><a class="lan" href="../Lan/lan-home.html" data-slide="1" >LAN</a></li>
+                <li><a class="wen" href="../Wen/wen-home.html" data-slide="2" >WEN</a></li>
+                <li><a class="minor" href="../Minor/minor-home.html" data-slide="3" >MINOR</a></li>
+            </ul>
+            
+            
+            <!--Right Side-->
+            <ul class="right clan-tab">
+                <li><a class="nie" href="../Nie/nie-home.html" data-slide="5" >NIE</a></li>
+                <li><a class="jiang" href="../Jiang/jiang-home.html" data-slide="6">JIANG</a></li>
+                <li><a class="jin" href="../Jin/jin-home.html" data-slide="7">JIN</a></li>
+            </ul>
+            </div>
+        </div>
+</nav>
+
+
+<!--Side Navbar-->
+<ul id="slide-out" class="sidenav custom-sidenav">
+    <li class="sidenav-header">
+            <a href="../../index.html" class="sidenav-title">
+                Cultivators' Compendium
+            </a>
+    </li>
+    <li>
+        <a href="../Lan/lan-home.html" class="clan-link">
+            <img src="../../Assets/BG/lan-symbol.webp" class="clan-symbol left" alt="Lan Clan Symbol"> 
+            <span class="clan-name">Lan Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Wen/wen-home.html" class="clan-link">
+            <img src="../../Assets/BG/wen-symbol.webp" class="clan-symbol left" alt="Minor Symbol"> 
+            <span class="clan-name">Wen Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Minor/minor-home.html" class="clan-link">
+            <img src="../../Assets/BG/rogue-symbol.webp" class="clan-symbol left" alt="Rogue Symbol"> 
+            <span class="clan-name">Rogue & Minor</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Nie/nie-home.html" class="clan-link">
+            <img src="../../Assets/BG/nie-symbol.png" class="clan-symbol left" alt="Nie Clan Symbol"> 
+            <span class="clan-name">Nie Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jiang/jiang-home.html" class="clan-link">
+            <img src="../../Assets/BG/jiang-symbol.webp" class="clan-symbol left" alt="Jiang Clan Symbol"> 
+            <span class="clan-name">Jiang Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../Jin/jin-home.html" class="clan-link">
+            <img src="../../Assets/BG/jin-symbol.webp" class="clan-symbol left" alt="Jin Clan Symbol"> 
+            <span class="clan-name">Jin Sect</span>
+        </a>
+    </li>
+    <li>
+        <a href="../All.html" class="clan-link">
+            <img src="../../Assets/BG/all-icon.png" class="clan-symbol left" alt="All Symbol"> 
+            <span class="clan-name">All Cultivators</span>
+        </a>
+    </li>
+</ul>
+
+
+<!-- Button to Trigger Sidenav -->
+<a href="#" data-target="slide-out" class="sidenav-trigger">
+    <i class="material-icons">menu</i>
+</a>
+
+
+<!--Page Content -->
+<!--Banner -->
+<section class="banner parallax-container">  
+    <div class="parallax">
+        <img src="../../Assets/Character/Jin/Chacter Page Pics/jgy-banner.png" alt="Character Banner">
+    </div>
+
+    <div class="row">
+        <div class="col s12 charname">
+            <h4>FORMER JIN SECT LEADER</h4>
+            <h1>Jin Guangyao</h1>
+                <blockquote class="flow-text">
+                    "Clan Leader Jiang, calm down. You're only reacting like this because you found out your senior had been framed, and he 
+                    saved you today. And recalling all the things you did all those years... You... That prideful heart of yours suddenly felt a tinge of 
+                    guilt.But if you had just a little more faith in your senior back then, he wouldn't have met such a gruesome fate. Oh, I almost forgot, 
+                    you were the one who led the siege."
+                </blockquote>
+        </div>
+    </div> 
+</section>
+<!--LORE white bg, make textbox border of clan-color-->
+<section class="lore">
+    <div class="row">
+
+        <div class="col l6 s12 push-l6">
+            <div class="card-panel hoverable char-info">
+            <h3>Jin Guangyao</h3>
+            <p class="justify">
+            Meng Yao, born the illegitimate son of Jin Guangshan and a prostitute, endured a harsh and stigmatized upbringing. Despite his 
+            humble origins, he was intelligent and ambitious, striving to rise above the societal scorn directed at him. However, his father, 
+            Jin Guangshan, refused to acknowledge him, forcing Meng Yao to carve out his own path. During the rise of the Wen Clan, Meng Yao 
+            met Lan Xichen and helped him hide from the Wens, beginning a bond between the two. His abilities and determination were 
+            eventually recognized by Nie Mingjue, who acknowledged Meng Yao's talents despite initial prejudice. Meng Yao's strategic mind 
+            earned him a place working alongside Nie Mingjue and Lan Xichen during the Sunshot Campaign. Their collaboration, though marked by
+            mutual distrust on Nie Mingjue's part, became crucial to the war effort. At one point, Nie Mingjue even recommended Meng Yao to 
+            Jin Guangshan, believing his father could use someone with Meng Yao's skills—though Meng Yao saw no respite since he couldn't raise 
+            above his station just by being in the Jin Clan.
+            <br><br>
+            Meng Yao's darker nature began to emerge when he murdered Jin Clan disciples who had taken advantage of him. He used a Wen Clan 
+            sword to carry out the act and was discovered by Nie Mingjue. When confronted, Meng Yao refused to admit his crimes, and Nie 
+            Mingjue, enraged, threatened to kill him. Meng Yao managed to escape by incapacitating Nie Mingjue. During the Sunshot Campaign, 
+            Meng Yao served as a spy, sending critical intel about the Wen Clan's movements to Lan Xichen. However, his actions became 
+            increasingly complex when he allied himself with Wen Ruohan and became his trusted right-hand man. Nie Mingjue was ambushed due to 
+            false intelligence, and he discovered Meng Yao had betrayed their cause. After humiliating him in front of Wen Ruohan and killing 
+            his disciples, Meng Yao helped Nie Mingjue escape Nightless City.
+            <br><br>
+            Meng Yao ultimately turned on Wen Ruohan, stabbing him in the back and securing the Jin Clan's victory in the campaign. 
+            Following the war, Jin Guangshan finally acknowledged him as his son, reaping the benefits of Meng Yao's accomplishments without 
+            offering any paternal support. Now known as Jin Guangyao, Meng Yao rose to prominence within the Jin Clan but engaged in 
+            increasingly sinister activities. These included demonic cultivation experiments with Xue Yang, framing Wei Wuxian for various 
+            misdeeds, and orchestrating the death of Nie Mingjue by playing a harmful version of a Lan Clan song. Years after his initial rise,
+            Jin Guangyao's schemes were unraveled. Thirteen years post-campaign, it was revealed that he had dismembered Nie Mingjue's corpse to 
+            create a fierce corpse even more powerful than Wen Ning, the Ghost General. His secrets were exposed, and his crimes—both against 
+            individuals and the cultivation world—made him a public enemy. In his final moments, Meng Yao realized that Nie Huaisang, Nie Mingjue's 
+            brother, had orchestrated his downfall from the shadows. Before his death, he expressed that despite all his terrible deeds, Lan Xichen 
+            was the one person he never thought of harming, seeing him as his only exception. Jin Guangyao died hated by many, leaving behind a 
+            legacy of treachery and tragedy.
+            </p>
+            </div>
+        </div>
+
+        <div class="col l6 s12 pull-l6 content-img">
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jgy-fight.jpg" alt="jgy fight">
+                <figcaption class="center">Lan Xichen and Meng Yao fighting together</figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jgy-spy.webp" alt="jgy spy">
+                <figcaption class="center">Meng Yao as a spy</figcaption>
+            </figure>
+
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jgy-stairs.webp" alt="jgy x stairs">
+                <figcaption class="center">Jin Guangyao often falls from stairs, must be why he made elevators in Koi Tower</figcaption>
+            </figure>
+            
+            <figure>
+                <img class="materialboxed responsive-img" src="../../Assets/Character/Jin/Chacter Page Pics/jgy-jl.gif" alt="jgy jl">
+                <figcaption class="center">Jin Rulan was quite affectionate with his uncle since he was one of the people who took care of him.</figcaption>
+            </figure>
+
+            <figure>
+                            
+                <video style="width: 100%; height: auto;" class="responsive-video" controls>
+                    <source src="../../Assets/Vids and Audio/jgy-death.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <figcaption class="center">Meng Yao, in his last moments identifying Nie Huaisang was the mastermind and killed by the person he never wanted to harm.</figcaption>
+            </figure>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+<!--Relationship Tree - black bg-, borderlines are of respective clan-color, font-color of headings and title is the clan-color, bodies is white-->
+<section class="reltree">
+    <h3 class="yellow-text text-lighten-2">Relationships</h3>
+    <!-- Chart Container -->
+    <div id="chart"></div>
+
+    <!-- Tooltip -->
+    <!-- The tooltip should be outside of `#chart` since it's a floating element -->
+    <div id="tooltip">
+    </div>
+</section>
+
+
+<!--Carousel - clan-color -->
+<section class="fun-facts">
+    <div>
+        <h3 class="yellow-text text-lighten-3">Trivias</h3>
+        <!-- Card 1 -->
+        <div class="scrollable-row">
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/jin-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Jin Guangyao</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator yellow-text text-darken-4">A Name that is Scraps in Exchange for Meng Yao's Work</span>
+                    <p>
+                        When Jin Guangyao was exalted as a war hero, Jin Guangshan acknowledged him, but his name says the opposite. Jin Zixuan and Jin Zixun
+                        same generation contemporaries of Jin Guangyao, start their names with the character 'Zi', unlike Jin Guangyao, starting 
+                        with 'Guang' like his father, putting him in an awkward position and essentially removing him from line of succession.
+                    </p>
+                </div>            
+            </div>
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/jin-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Same Date </span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator yellow-text text-darken-4">Same Date Different Treatment</span>
+                    <p>
+                        Jin Guangyao and Jin Zixuan, ironically were both born on the same day. When Meng Yao was trying to meet Jin Guangshan 
+                        on the date of his birth, people were celebrating Jin Zixuan's birth. Meng Yao on the other hand, was thrown from the 
+                        stairs by the Jin on the day of his birth, after his mother died.
+                    </p>
+                </div>            
+            </div>
+
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/jin-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Trash Father</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator yellow-text text-darken-4">Meng Yao and His Mother</span>
+                    <p>
+                        What broke Meng Yao was Jin Guangshan's slight against his mother. One time, when Jin Guangshan was hanging out with 
+                        prostitutes, he ended up talking about Meng Shi, Meng Yao's mother while Jin Guangyao was present. Essentially, he 
+                        was talking about Meng Shi like she was just troublesome for being able to read, an afterthought, nothing. His mother who waited for Jin Guangshan until her death, 
+                        just nothing, someone his father barely remembered. Him and his mother were nothing to Jin Guangshan, he would never be loved. 
+                        So he orchestrated his death by being serviced by prostitutes till he died, fitting for scum like Jin Guangshan.
+                    </p>
+                </div>            
+            </div>
+
+            <div class="scrollable-item card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img src="../../Assets/BG/jin-card.png" alt="frontcard">
+                    <span class="card-title activator black-text">Unexpected Mercy</span>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title activator yellow-text text-darken-4">A Single Mercy Does not Absolve Crimes, but is Mercy Nonetheless</span>
+                    <p>
+                        Of course, Jin Guangyao killed the prostitutes he used to kill Jin Guangshan, except one. This one prostitute contributed 
+                        to his downfall, she is named Sisi. Wei Wuxian saw the memory from a flashback that Sisi helped him and his mother when they 
+                        were being harrassed, concluding that this might be the reason he spared her.  
+                    </p>
+                </div>            
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Footer-->
+
+
+<footer class="page-footer" >
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12 pull-l2 left-align"> 
+                <a href="../../index.html">
+                    <h1 class="footer-title red-text text-darken-4">Cultivators' <br> Compendium</h1>
+                </a>
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Other Clans</h3> 
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="../Wen/wen-home.html">Wen</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Minor/minor-home.html">Minor & Rogues</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Nie/nie-home.html">Nie</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jiang/jiang-home.html">Jiang</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../Jin/jin-home.html">Jin</a></li>
+                </ul>                
+            </div>
+
+            <div class="col l3 s6 push-l3 foot-columns">
+                <h3 class="footer-heading red-text text-darken-2">Help</h3>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>© 2024 Cultivators' Compendium. Nonprofit educational use only. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <!-- CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="../../JS/jin/jgy.js"></script>
+</body>
+</html>
