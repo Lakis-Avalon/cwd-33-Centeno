@@ -1,0 +1,13 @@
+Most of them are just duplicates.
+The unique structures are in these pages:
+1. index - Landing page, an image  slider with the navbars synced to it. 
+The links to each clan are on their slides.
+2. clan-page - Card-panel for text, containes media, and rows for the list of members. Template 
+for the pages of the clans.
+3. character-page-most used, parallax banner, with blockquote for a character's quote or
+quote about them. Rows and columns containing image and info about their lore. Some have 
+a collapsible section containing their videos of fighting or doing their thing. There is a
+relationship section which uses D3 js. Lastly, there is a scrollable row containing trivias.
+4. all - page containing all the cultivators, filterable. They are in a container with a 
+gif as bg
+5. wangxian-page - page about the main couple, has scrollspy, in small screen, becomes dropdown.
