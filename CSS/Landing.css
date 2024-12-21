@@ -297,20 +297,6 @@ p {
         text-align: center;
     }
 
-    #lanslide h2{
-        line-height: .6;
-    }
-
-    #wenslide h2{
-        line-height: .6;
-    }
-
-    #nielide h2{
-        line-height: .6;
-        margin-top:3%;
-        margin-bottom: -5%;
-    }
-
     .symbol-img {
         transform:scale(.7);
         margin:-6.5vh 0 -7vh 0;
@@ -323,7 +309,6 @@ p {
     .clan-slides h2{
         margin-top:-2%;
         margin-bottom: 10%;
-        transform: scale(.8);
     }
 
     #minorslide h2{
@@ -333,7 +318,7 @@ p {
 
     .clan-slides p {
         margin-top:-3vh;
-        font-size:.75em;
+        font-size:small;
     } 
 
     .col.s12 {

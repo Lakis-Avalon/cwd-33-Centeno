@@ -217,7 +217,7 @@ section {
 }
 
 .banner .charname {
-    margin-top:8%;
+    margin-top:10%;
     padding-left:3%;
 }
 
@@ -313,9 +313,9 @@ section {
 
 /*----Reltree------*/
 .reltree {
-    margin-top:-4vh;
+    margin-top:-3vh;
     background-color: black;
-    height:100vh;
+    height:90vh;
     overflow-x: auto;
 }
 
@@ -402,8 +402,8 @@ section {
 /*-----Funfacts-------*/
 .fun-facts {
     background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(87, 7, 7));
-    height: 80vh;
-    margin-top:-4vh;
+    height: 70vh;
+    margin-top:-3vh;
     padding:3vh;
 }
 
@@ -510,7 +510,7 @@ section {
     }
 
     .banner .charname {
-        margin-top:20%;
+        margin-top:40%;
         padding-left:3%;
     }
     
@@ -540,7 +540,7 @@ section {
     }
 
     #chart {
-        margin-left:-32%;
+        margin-left:-35%;
     }
 
     .lore p, .action-vid p {

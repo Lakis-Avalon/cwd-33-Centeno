@@ -313,9 +313,9 @@ section {
 
 /*----Reltree------*/
 .reltree {
-    margin-top:-4vh;
+    margin-top:-3vh;
     background-color: black;
-    height:100vh;
+    height:90vh;
     overflow-x: auto;
 }
 
@@ -402,8 +402,8 @@ section {
 /*-----Funfacts-------*/
 .fun-facts {
     background: linear-gradient(to bottom, rgb(24, 24, 27), rgb(185, 185, 185));
-    height: 80vh;
-    margin-top:-4vh;
+    height: 70vh;
+    margin-top:-3vh;
     padding:3vh;
 }
 
@@ -509,7 +509,7 @@ section {
     }
 
     .banner .charname {
-        margin-top:40%;
+        margin-top:60%;
         padding-left:3%;
     }
     
