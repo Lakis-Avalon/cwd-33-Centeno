@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
           name: "Jin Zixuan",
           relationship: "Husband - She had unrequited feelings for him in their youth and their betrothal being dissolved hurt her. During the Sunshot Campaign, she helped in ways she could. Jin Zixuan pursued her after the campaign and they developed feelings eventually and got married and had Jin Ling.",
           image: "../../Assets/Character/Jin/Chacter Page Pics/jzxuan-icon.png", 
-          color: "blue",
+          color: "red",
           url: "../../Pages/Jin/jzxuan.html"
         },
 
